@@ -1,0 +1,7 @@
+# This file specifies Python version 3.12.1 for pyenv
+# It ensures consistent Python versions across development environments
+# Important for:
+# 1. SDL2 and Pygame compatibility
+# 2. Maintaining consistent behavior of 4D physics calculations
+# 3. Enabling automatic Python version switching with pyenv
+3.12.1
