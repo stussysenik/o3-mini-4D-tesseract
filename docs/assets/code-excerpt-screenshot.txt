@@ -1,0 +1,85 @@
+Repository: o3-mini-4D-tesseract
+Generated: 2026-03-03
+
+Source: src/main.py
+
+"""
+4D Tesseract Ball Animation
+--------------------------
+This module provides a visualization of a ball bouncing inside a 4D tesseract (hypercube),
+projected into 2D space using pygame.
+The visualization demonstrates:
+1. Generation of a 4D tesseract's vertices and edges
+2. Projection from 4D to 2D space through rotation and perspective
+3. Physics simulation of a ball bouncing within the tesseract boundaries
+4. Real-time animation and rendering using pygame
+Required Python version: 3.12.1
+Dependencies: pygame==2.5.2
+Example usage:
+    python main.py
+Controls:
+    - Close window to exit
+    - Animation runs automatically
+"""
+import pygame
+import math
+import sys
+from config import WIDTH, HEIGHT, COLORS, FPS
+from tesseract.geometry import generate_tesseract_vertices, generate_tesseract_edges
+from tesseract.projection import project_point
+from tesseract.physics import update_ball_position
+# Initialize Pygame and set up display
+pygame.init()
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Ball Bouncing Inside a Tesseract")
+clock = pygame.time.Clock()
+FPS = 60
+# Define colors for visualization
+WHITE = (255, 255, 255)
+GRAY = (100, 100, 100)
+RED = (255, 0, 0)
+BLACK = (0, 0, 0)
+def generate_tesseract_vertices():
+    """
+    Generate the 16 vertices of a tesseract with coordinates ±1 in each dimension.
+    Returns:
+        list: List of 4D coordinates [x, y, z, w] for each vertex
+    """
+    vertices = []
+    for x in (-1, 1):
+        for y in (-1, 1):
+            for z in (-1, 1):
+                for w in (-1, 1):
+                    vertices.append([x, y, z, w])
+    return vertices
+def generate_tesseract_edges(vertices):
+    """
+    Generate edges between tesseract vertices that differ in exactly one coordinate.
+    Args:
+        vertices (list): List of vertex coordinates
+    Returns:
+        list: List of tuples containing vertex indices that form edges
+    """
+    edges = []
+    n = len(vertices)
+    for i in range(n):
+        for j in range(i + 1, n):
+            # Count differing coordinates
+            diff = sum(1 for k in range(4) if vertices[i][k] != vertices[j][k])
+            if diff == 1:
+                edges.append((i, j))
+    return edges
+# Initialize tesseract geometry
+tesseract_vertices = generate_tesseract_vertices()
+tesseract_edges = generate_tesseract_edges(tesseract_vertices)
+# Set up projection parameters
+scale = 200          # Scaling factor for drawing
+distance = 3         # Distance used for perspective projection (3D -> 2D)
+screen_center = (WIDTH // 2, HEIGHT // 2)
+def project_point(point, angle):
+    """
+    Project a 4D point to 2D screen coordinates through rotation and perspective projection.
+    Args:
+        point (list): 4D coordinates [x, y, z, w]
+        angle (float): Rotation angle in radians
