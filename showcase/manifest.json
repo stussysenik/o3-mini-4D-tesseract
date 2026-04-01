@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "default_status": "draft",
+  "status_values": [
+    "draft",
+    "review",
+    "published"
+  ],
+  "comparison_required_fields": [
+    "comparison_id",
+    "created_at",
+    "benchmark_id",
+    "title",
+    "status",
+    "summary",
+    "target_id",
+    "pair_key",
+    "left",
+    "right",
+    "site_root",
+    "device_presets",
+    "code_summary",
+    "notes",
+    "artifacts"
+  ],
+  "device_presets": [
+    {
+      "id": "mobile",
+      "label": "Mobile",
+      "width": 390,
+      "height": 844,
+      "notes": "Phone-sized benchmark presentation."
+    },
+    {
+      "id": "tablet",
+      "label": "Tablet",
+      "width": 820,
+      "height": 1180,
+      "notes": "iPad-class side-by-side review surface."
+    },
+    {
+      "id": "desktop",
+      "label": "Desktop",
+      "width": 1440,
+      "height": 960,
+      "notes": "Desktop review surface for full-width visual and code comparison."
+    }
+  ],
+  "capture_filename_hints": {
+    "mobile": [
+      "mobile",
+      "phone",
+      "iphone",
+      "pixel"
+    ],
+    "tablet": [
+      "tablet",
+      "ipad"
+    ],
+    "desktop": [
+      "desktop",
+      "laptop",
+      "macbook",
+      "monitor"
+    ]
+  },
+  "code_preview": {
+    "max_changed_files": 8,
+    "max_diff_lines": 220
+  },
+  "notes": [
+    "Showcase pages are generated static comparison surfaces.",
+    "Subjects resolve to canonical execution results even when the input reference is a run.",
+    "Each comparison combines visual evidence, code-level deltas, and benchmark report metadata."
+  ]
+}

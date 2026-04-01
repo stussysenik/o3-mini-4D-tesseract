@@ -1,0 +1,12 @@
+{
+  "name": "tesseract-benchmark-preview",
+  "private": true,
+  "packageManager": "npm@11.6.0",
+  "devDependencies": {
+    "vite": "8.0.3"
+  },
+  "scripts": {
+    "preview:result": "python3 benchmark_preview.py serve-result",
+    "preview:showcase": "python3 benchmark_preview.py serve-showcase"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "packet_id": "o3--20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T17:30:00Z",
+  "benchmark_id": "webgpu-hypertesseract-v1",
+  "model_id": "o3",
+  "recipe_id": "baseline-webgpu-hypertesseract",
+  "scene_id": "webgpu-hypertesseract-v1",
+  "generation_kind": "one-liner",
+  "generation_kind_status": "active",
+  "target": {
+    "id": "ts-webgpu",
+    "label": "TypeScript + WebGPU",
+    "language": "ts",
+    "runtime": "browser",
+    "lane": "primary",
+    "default_capabilities": [
+      "html",
+      "css",
+      "dom",
+      "webgpu",
+      "wgsl"
+    ],
+    "optional_capabilities": [
+      "wasm",
+      "web-workers",
+      "offscreen-canvas"
+    ],
+    "recommended": true,
+    "notes": "Best default for the visual benchmark. Browser-native and highly comparable across models."
+  },
+  "selected_capabilities": [
+    "html",
+    "css",
+    "dom",
+    "webgpu",
+    "wgsl"
+  ],
+  "selected_locales": [
+    "en"
+  ],
+  "variables": {
+    "creative_focus": "visual fidelity, shader clarity, and benchmark honesty",
+    "visual_mood": "precise luminous sci-fi",
+    "interaction_style": "ambient orbit plus subtle pointer interaction",
+    "geometry_style": "procedural hypertesseract wireframe with volumetric cues",
+    "report_panel_style": "compact scientific benchmark panel"
+  },
+  "checkpoints": [
+    {
+      "id": "capability-plan",
+      "label": "Capability Plan",
+      "description": "Declare the chosen browser APIs and why they are justified for this target."
+    },
+    {
+      "id": "scene-plan",
+      "label": "Scene Plan",
+      "description": "Describe the geometry, motion, shading, and UI before implementation."
+    },
+    {
+      "id": "report-contract",
+      "label": "Report Contract",
+      "description": "Return benchmark metadata, limitations, and capability usage in a stable format."
+    }
+  ],
+  "delivery_contract": {
+    "response_format": "markdown with embedded code fences and a machine-readable benchmark report block",
+    "required_sections": [
+      "Implementation Summary",
+      "Target Declaration",
+      "Capability Declaration",
+      "Files",
+      "Benchmark Report",
+      "Known Limitations"
+    ],
+    "benchmark_report_fields": [
+      "target_id",
+      "target_language",
+      "runtime",
+      "lane",
+      "used_capabilities",
+      "requested_locales",
+      "wasm_used",
+      "webgpu_used",
+      "fallback_path",
+      "known_gaps"
+    ]
+  },
+  "orchestration_strategy": {
+    "primary": "dspy-compatible lightweight python cli",
+    "planning_layer": "openspec",
+    "secondary": "langchain_or_langsmith_optional",
+    "rationale": "Keep the benchmark contract, prompt packets, and evaluation data framework-light. Use OpenSpec for durable planning artifacts and DSPy for programmable planning/execution without making LangChain-style orchestration mandatory."
+  },
+  "messages": {
+    "system_prompt_path": "generation/prompts/system.md",
+    "scene_prompt_path": "generation/prompts/scenes/webgpu-hypertesseract-v1.md",
+    "recipe_template_path": "generation/recipes/baseline-webgpu-hypertesseract/one-liner.md",
+    "system_prompt": "# Tesseract Benchmark System Prompt\n\nYou are generating artifacts for a longitudinal 3D frontend benchmark.\n\nFollow these rules:\n- Respect the declared target language, runtime, and benchmark lane.\n- Favor browser-native delivery for primary-lane work.\n- Use only the selected capabilities unless a fallback is explicitly justified.\n- Keep the implementation self-contained and runnable with minimal setup.\n- Do not silently swap to a different language or runtime.\n- Be explicit about whether WebGPU is used.\n- Be explicit about whether WASM is used and why.\n- Avoid fake claims about performance, multilingual support, or visual fidelity.\n\nAlways return these sections in order:\n1. `Implementation Summary`\n2. `Target Declaration`\n3. `Capability Declaration`\n4. `Files`\n5. `Benchmark Report`\n6. `Known Limitations`\n\nInside `Benchmark Report`, include a machine-readable JSON block with:\n- `target_id`\n- `target_language`\n- `runtime`\n- `lane`\n- `used_capabilities`\n- `requested_locales`\n- `wasm_used`\n- `webgpu_used`\n- `fallback_path`\n- `known_gaps`\n\nIf the prompt is underspecified, make the smallest reasonable assumption and state it in `Known Limitations` instead of asking for clarification.\n",
+    "scene_prompt": "# WebGPU Hypertesseract Benchmark v1\n\nBuild a browser-native visual benchmark scene centered on a hypertesseract or tesseract-derived object.\n\nScene requirements:\n- The scene must feel like a modern high-end graphics demo rather than a classroom wireframe.\n- Geometry, motion, lighting, and composition should communicate higher-dimensional structure.\n- The implementation should visibly justify the use of WebGPU when WebGPU is selected.\n- If WASM is selected, its role must be specific and defensible, for example geometry generation, simulation, or data processing.\n- The UI should include a compact benchmark/report surface showing target, capabilities, locales, and known limitations.\n- The scene should remain self-contained without external asset downloads unless explicitly allowed later.\n\nBenchmark intent:\n- Compare how different models synthesize ambitious graphics prompts.\n- Preserve reproducibility through explicit capability declarations.\n- Make multilingual UX visible rather than hidden in code comments.\n",
+    "user_prompt": "Build a self-contained TypeScript + WebGPU Hypertesseract v1 benchmark scene with visual fidelity, shader clarity, and benchmark honesty, a precise luminous sci-fi look, procedural hypertesseract wireframe with volumetric cues, ambient orbit plus subtle pointer interaction, support for en, and a compact scientific benchmark panel that clearly states WebGPU/WASM usage and limitations.\n"
+  }
+}

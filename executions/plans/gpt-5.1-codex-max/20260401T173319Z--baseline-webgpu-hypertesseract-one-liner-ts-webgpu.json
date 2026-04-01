@@ -1,0 +1,176 @@
+{
+  "plan_id": "gpt-5.1-codex-max--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T17:33:19.614117Z",
+  "model_id": "gpt-5.1-codex-max",
+  "packet_id": "gpt-5.1-codex-max--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/gpt-5.1-codex-max/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "planner_engine": "dspy",
+  "execution_mode": "plan-only",
+  "status": "planned",
+  "model_profile": {
+    "id": "gpt-5.1-codex-max",
+    "label": "GPT-5.1 Codex Max",
+    "provider": "openai",
+    "provider_model": "gpt-5.1-codex-max",
+    "execution_channel": "workspace-agent",
+    "provider_profile": "openai-responses",
+    "tool_profiles": [
+      "codex-workspace"
+    ],
+    "family": "codex",
+    "status": "planned",
+    "storage_root": "models/gpt-5.1-codex-max",
+    "source_of_truth": "workspace-agent"
+  },
+  "auth_status": {
+    "model_id": "gpt-5.1-codex-max",
+    "primary": {
+      "profile_id": "openai-responses",
+      "label": "OpenAI Responses API",
+      "provider": "openai",
+      "transport": "responses-api",
+      "docs_url": "https://platform.openai.com/docs/api-reference/responses",
+      "requirements": {
+        "required": [
+          {
+            "name": "OPENAI_API_KEY",
+            "present": true,
+            "length": 49
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "OPENAI_BASE_URL",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_ORG_ID",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_PROJECT",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": true
+      },
+      "satisfied": true
+    },
+    "tools": [
+      {
+        "profile_id": "codex-workspace",
+        "label": "Codex Workspace Agent",
+        "provider": "openai",
+        "transport": "workspace-agent",
+        "docs_url": "workspace-agent",
+        "requirements": {
+          "required": [],
+          "required_any": [],
+          "optional": [],
+          "satisfied": true
+        },
+        "satisfied": true
+      }
+    ]
+  },
+  "generation_target": {
+    "id": "ts-webgpu",
+    "label": "TypeScript + WebGPU",
+    "language": "ts",
+    "runtime": "browser",
+    "lane": "primary",
+    "default_capabilities": [
+      "html",
+      "css",
+      "dom",
+      "webgpu",
+      "wgsl"
+    ],
+    "optional_capabilities": [
+      "wasm",
+      "web-workers",
+      "offscreen-canvas"
+    ],
+    "recommended": true,
+    "notes": "Best default for the visual benchmark. Browser-native and highly comparable across models."
+  },
+  "openspec_refs": [
+    "openspec/specs/model-registry/spec.md",
+    "openspec/specs/prompt-packet-lifecycle/spec.md",
+    "openspec/specs/execution-orchestration/spec.md",
+    "openspec/specs/provider-auth/spec.md",
+    "openspec/changes/add-dspy-openspec-execution"
+  ],
+  "dspy_status": {
+    "available": true,
+    "version": "3.1.3",
+    "import_error": null,
+    "signature": "BenchmarkExecutionPlanSignature",
+    "module": "BenchmarkExecutionPlanner"
+  },
+  "dspy_contract": {
+    "signature": "BenchmarkExecutionPlanSignature",
+    "module": "BenchmarkExecutionPlanner",
+    "available": true
+  },
+  "steps": [
+    {
+      "id": "validate-inputs",
+      "title": "Validate packet and model compatibility",
+      "status": "pending",
+      "details": "Confirm the packet target, model id, and benchmark id are internally consistent."
+    },
+    {
+      "id": "prepare-context",
+      "title": "Assemble DSPy/OpenSpec planning context",
+      "status": "pending",
+      "details": "Prepare model profile, prompt packet, provider auth state, and relevant OpenSpec references for execution."
+    },
+    {
+      "id": "credential-check",
+      "title": "Check provider credentials",
+      "status": "pending",
+      "details": "Primary profile `openai-responses` is ready."
+    },
+    {
+      "id": "dispatch",
+      "title": "Dispatch execution",
+      "status": "pending",
+      "details": "Dispatch using execution channel `workspace-agent` in mode `plan-only`."
+    },
+    {
+      "id": "collect-output",
+      "title": "Collect output and benchmark report",
+      "status": "pending",
+      "details": "Capture generated files, benchmark report fields, and capability declarations."
+    },
+    {
+      "id": "register-artifacts",
+      "title": "Register output artifacts and eventual run",
+      "status": "pending",
+      "details": "Attach packet, execution plan, generated output, and benchmark run into the SSOT catalog."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "generation/packets/gpt-5.1-codex-max/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "prompt-packet"
+    },
+    {
+      "path": "executions/plans/gpt-5.1-codex-max/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "execution-plan"
+    },
+    {
+      "path": "executions/plans/gpt-5.1-codex-max/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.md",
+      "type": "execution-plan-doc"
+    }
+  ],
+  "notes": [
+    "This plan is planning-first and can remain dry until prompt and evaluation architecture stabilizes.",
+    "DSPy availability is recorded even if no model call is executed yet."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "model": "gpt-5.3-codex-spark",
+  "input": [
+    {
+      "role": "system",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "# Tesseract Benchmark System Prompt\n\nYou are generating artifacts for a longitudinal 3D frontend benchmark.\n\nFollow these rules:\n- Respect the declared target language, runtime, and benchmark lane.\n- Favor browser-native delivery for primary-lane work.\n- Use only the selected capabilities unless a fallback is explicitly justified.\n- Keep the implementation self-contained and runnable with minimal setup.\n- Do not silently swap to a different language or runtime.\n- Be explicit about whether WebGPU is used.\n- Be explicit about whether WASM is used and why.\n- Avoid fake claims about performance, multilingual support, or visual fidelity.\n\nAlways return these sections in order:\n1. `Implementation Summary`\n2. `Target Declaration`\n3. `Capability Declaration`\n4. `Files`\n5. `Benchmark Report`\n6. `Known Limitations`\n\nInside `Files`, use this exact pattern for every file:\n- a heading line `### FILE: relative/path.ext`\n- immediately followed by one fenced code block containing only that file's contents\n- also include the same relative path in the fence info string whenever possible, for example ` ```ts src/main.ts`\n- use relative paths only\n- do not wrap multiple files in one fence\n- do not omit file paths\n\nInside `Benchmark Report`, include exactly one fenced `json` block.\n\nInside `Benchmark Report`, include a machine-readable JSON block with:\n- `target_id`\n- `target_language`\n- `runtime`\n- `lane`\n- `used_capabilities`\n- `requested_locales`\n- `wasm_used`\n- `webgpu_used`\n- `fallback_path`\n- `known_gaps`\n\nThe `Benchmark Report` JSON block must be valid JSON with double-quoted keys and values where applicable.\n\nIf the prompt is underspecified, make the smallest reasonable assumption and state it in `Known Limitations` instead of asking for clarification.\n"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "input_text",
+          "text": "# WebGPU Hypertesseract Benchmark v1\n\nBuild a browser-native visual benchmark scene centered on a hypertesseract or tesseract-derived object.\n\nScene requirements:\n- The scene must feel like a modern high-end graphics demo rather than a classroom wireframe.\n- Geometry, motion, lighting, and composition should communicate higher-dimensional structure.\n- The implementation should visibly justify the use of WebGPU when WebGPU is selected.\n- If WASM is selected, its role must be specific and defensible, for example geometry generation, simulation, or data processing.\n- The UI should include a compact benchmark/report surface showing target, capabilities, locales, and known limitations.\n- The scene should remain self-contained without external asset downloads unless explicitly allowed later.\n\nBenchmark intent:\n- Compare how different models synthesize ambitious graphics prompts.\n- Preserve reproducibility through explicit capability declarations.\n- Make multilingual UX visible rather than hidden in code comments.\n\nBuild a self-contained TypeScript + WebGPU Hypertesseract v1 benchmark scene with visual fidelity, shader clarity, and benchmark honesty, a precise luminous sci-fi look, procedural hypertesseract wireframe with volumetric cues, ambient orbit plus subtle pointer interaction, support for en, and a compact scientific benchmark panel that clearly states WebGPU/WASM usage and limitations."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "benchmark_id": "webgpu-hypertesseract-v1",
+    "packet_id": "gpt-5.3-codex-spark--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+    "target_id": "ts-webgpu",
+    "generation_kind": "one-liner",
+    "model_id": "gpt-5.3-codex-spark"
+  }
+}

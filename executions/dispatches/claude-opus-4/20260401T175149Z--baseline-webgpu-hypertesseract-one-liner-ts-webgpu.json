@@ -1,0 +1,130 @@
+{
+  "dispatch_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T17:51:49.637640Z",
+  "model_id": "claude-opus-4",
+  "result_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "result_path": "executions/results/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "plan_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "plan_path": "executions/plans/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "packet_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "provider_profile_id": "anthropic-messages",
+  "tool_profile_ids": [
+    "claude-code-native"
+  ],
+  "execution_channel": "api",
+  "transport": "messages-api",
+  "status": "prepared",
+  "request_bundle_root": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "b573e292201043cfe7639b743de5aa9026aaadb6ffe5a5a24f16de7ea68361a4",
+    "request_payload_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "7a9ebe830e05281c9bd557f8dc8b4748532614f9da81cb99ead6a82f0aeed4c2",
+    "response_placeholder_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  },
+  "auth_status": {
+    "primary": {
+      "profile_id": "anthropic-messages",
+      "label": "Anthropic Messages API",
+      "provider": "anthropic",
+      "transport": "messages-api",
+      "docs_url": "https://docs.anthropic.com/en/api/messages",
+      "requirements": {
+        "required": [
+          {
+            "name": "ANTHROPIC_API_KEY",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "ANTHROPIC_BASE_URL",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": false
+      },
+      "satisfied": false
+    },
+    "tools": [
+      {
+        "profile_id": "claude-code-native",
+        "label": "Claude Code Native",
+        "provider": "anthropic",
+        "transport": "claude-code",
+        "docs_url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+        "requirements": {
+          "required": [
+            {
+              "name": "ANTHROPIC_API_KEY",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "required_any": [],
+          "optional": [
+            {
+              "name": "ANTHROPIC_BASE_URL",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "satisfied": false
+        },
+        "satisfied": false
+      }
+    ]
+  },
+  "invocation": {
+    "kind": "http-api",
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "api_key_hint": "$ANTHROPIC_API_KEY",
+    "suggested_command": "bash executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh"
+  },
+  "request_artifacts": [
+    {
+      "path": "executions/dispatches/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "dispatch-record"
+    },
+    {
+      "path": "executions/dispatches/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.md",
+      "type": "dispatch-record-doc"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh",
+      "type": "curl-script"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/dispatch_manifest.json",
+      "type": "dispatch-manifest"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/invocation.md",
+      "type": "invocation-doc"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+      "type": "prompt-bundle"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+      "type": "request-payload"
+    },
+    {
+      "path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json",
+      "type": "response-placeholder"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "dispatch_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "pending",
+  "notes": "Write raw provider output to response.raw.json or provide --source to ingest-response. This placeholder is not the canonical raw response artifact."
+}

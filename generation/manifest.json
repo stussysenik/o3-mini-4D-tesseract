@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "system_prompt_path": "generation/prompts/system.md",
+  "default_scene_id": "webgpu-hypertesseract-v1",
+  "default_recipe_id": "baseline-webgpu-hypertesseract",
+  "orchestration_strategy": {
+    "primary": "dspy-compatible lightweight python cli",
+    "planning_layer": "openspec",
+    "secondary": "langchain_or_langsmith_optional",
+    "rationale": "Keep the benchmark contract, prompt packets, and evaluation data framework-light. Use OpenSpec for durable planning artifacts and DSPy for programmable planning/execution without making LangChain-style orchestration mandatory."
+  },
+  "generation_kinds": [
+    {
+      "id": "one-liner",
+      "label": "One-Liner",
+      "status": "active",
+      "complexity_rank": 1,
+      "description": "Single imperative line. Minimal steering and maximal model autonomy."
+    },
+    {
+      "id": "one-sentence",
+      "label": "One-Sentence",
+      "status": "active",
+      "complexity_rank": 2,
+      "description": "Single sentence with slightly richer creative and technical steering."
+    },
+    {
+      "id": "one-shot",
+      "label": "One-Shot",
+      "status": "active",
+      "complexity_rank": 3,
+      "description": "Single-shot prompt with explicit constraints, output contract, and benchmark reporting."
+    },
+    {
+      "id": "checkpointed-one-shot",
+      "label": "Checkpointed One-Shot",
+      "status": "planned",
+      "complexity_rank": 4,
+      "description": "Adds intermediate checkpoints and review gates to a single-shot prompt."
+    },
+    {
+      "id": "ir-scaffold",
+      "label": "IR Scaffold",
+      "status": "planned",
+      "complexity_rank": 5,
+      "description": "Model receives explicit intermediate representation, design scaffolds, and implementation phases."
+    },
+    {
+      "id": "multi-pass-critic-loop",
+      "label": "Multi-Pass Critic Loop",
+      "status": "planned",
+      "complexity_rank": 6,
+      "description": "Planner, implementer, and critic passes coordinated around shared benchmark checkpoints."
+    }
+  ],
+  "lanes": [
+    {
+      "id": "primary",
+      "label": "Primary Browser-Native",
+      "description": "Headline SOTA lane. Apples-to-apples browser-native visual benchmark."
+    },
+    {
+      "id": "secondary",
+      "label": "Secondary WASM Systems",
+      "description": "Browser-delivered systems with a stronger compiled or WASM-heavy component."
+    },
+    {
+      "id": "experimental",
+      "label": "Experimental Cross-Runtime",
+      "description": "Tracked for research value, but not directly comparable for the headline leaderboard."
+    }
+  ],
+  "targets": [
+    {
+      "id": "ts-webgpu",
+      "label": "TypeScript + WebGPU",
+      "language": "ts",
+      "runtime": "browser",
+      "lane": "primary",
+      "default_capabilities": [
+        "html",
+        "css",
+        "dom",
+        "webgpu",
+        "wgsl"
+      ],
+      "optional_capabilities": [
+        "wasm",
+        "web-workers",
+        "offscreen-canvas"
+      ],
+      "recommended": true,
+      "notes": "Best default for the visual benchmark. Browser-native and highly comparable across models."
+    },
+    {
+      "id": "js-webgpu",
+      "label": "JavaScript + WebGPU",
+      "language": "js",
+      "runtime": "browser",
+      "lane": "primary",
+      "default_capabilities": [
+        "html",
+        "css",
+        "dom",
+        "webgpu",
+        "wgsl"
+      ],
+      "optional_capabilities": [
+        "wasm",
+        "web-workers",
+        "offscreen-canvas"
+      ],
+      "recommended": true,
+      "notes": "Good baseline when the model is stronger at plain JavaScript than TypeScript."
+    },
+    {
+      "id": "zig-wasm-webgpu",
+      "label": "Zig + WASM + WebGPU",
+      "language": "zig",
+      "runtime": "browser-wasm",
+      "lane": "secondary",
+      "default_capabilities": [
+        "html",
+        "css",
+        "dom",
+        "wasm",
+        "webgpu",
+        "wgsl"
+      ],
+      "optional_capabilities": [
+        "web-workers",
+        "offscreen-canvas"
+      ],
+      "recommended": true,
+      "notes": "Use when the experiment explicitly cares about compiled systems or WASM-heavy geometry/rendering."
+    }
+  ],
+  "deferred_languages": [
+    {
+      "language": "lua",
+      "status": "deferred",
+      "reason": "No clean browser-native lane has been standardized yet. Add only after a reproducible browser delivery contract exists."
+    },
+    {
+      "language": "python",
+      "status": "deferred",
+      "reason": "Useful for tooling and offline analysis, but not a clean primary visual benchmark target without a consistent browser/runtime contract."
+    },
+    {
+      "language": "elixir",
+      "status": "deferred",
+      "reason": "Interesting for server-assisted generation flows, but it changes the benchmark from pure client-side visual synthesis."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "webgpu-hypertesseract-v1",
+      "title": "WebGPU Hypertesseract Benchmark v1",
+      "short_name": "Hypertesseract v1",
+      "path": "generation/prompts/scenes/webgpu-hypertesseract-v1.md",
+      "required_outputs": [
+        "A self-contained visual scene that renders a convincing animated hypertesseract or tesseract-derived construct",
+        "A visible benchmark/report panel or equivalent structured output describing used capabilities and limitations",
+        "A multilingual UI surface with at least the requested locales",
+        "A clear declaration of whether WASM is used and why"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "baseline-webgpu-hypertesseract",
+      "label": "Baseline WebGPU Hypertesseract",
+      "description": "Starter recipe for first-pass browser-native hypertesseract generations with standardized reporting.",
+      "directory": "generation/recipes/baseline-webgpu-hypertesseract",
+      "scene_id": "webgpu-hypertesseract-v1",
+      "default_kind": "one-liner",
+      "allowed_kinds": [
+        "one-liner",
+        "one-sentence",
+        "one-shot"
+      ],
+      "default_target": "ts-webgpu",
+      "default_track": "o3",
+      "default_locales": [
+        "en"
+      ],
+      "variables": [
+        {
+          "id": "creative_focus",
+          "default": "visual fidelity, shader clarity, and benchmark honesty",
+          "description": "Primary creative or technical emphasis."
+        },
+        {
+          "id": "visual_mood",
+          "default": "precise luminous sci-fi",
+          "description": "Overall art direction."
+        },
+        {
+          "id": "interaction_style",
+          "default": "ambient orbit plus subtle pointer interaction",
+          "description": "Desired interaction pattern."
+        },
+        {
+          "id": "geometry_style",
+          "default": "procedural hypertesseract wireframe with volumetric cues",
+          "description": "How the geometry should be presented."
+        },
+        {
+          "id": "report_panel_style",
+          "default": "compact scientific benchmark panel",
+          "description": "How the in-product benchmark report should look."
+        }
+      ],
+      "checkpoints": [
+        {
+          "id": "capability-plan",
+          "label": "Capability Plan",
+          "description": "Declare the chosen browser APIs and why they are justified for this target."
+        },
+        {
+          "id": "scene-plan",
+          "label": "Scene Plan",
+          "description": "Describe the geometry, motion, shading, and UI before implementation."
+        },
+        {
+          "id": "report-contract",
+          "label": "Report Contract",
+          "description": "Return benchmark metadata, limitations, and capability usage in a stable format."
+        }
+      ],
+      "delivery_contract": {
+        "response_format": "markdown with canonical section headings, FILE-prefixed code fences, and a single machine-readable benchmark report json block",
+        "required_sections": [
+          "Implementation Summary",
+          "Target Declaration",
+          "Capability Declaration",
+          "Files",
+          "Benchmark Report",
+          "Known Limitations"
+        ],
+        "benchmark_report_fields": [
+          "target_id",
+          "target_language",
+          "runtime",
+          "lane",
+          "used_capabilities",
+          "requested_locales",
+          "wasm_used",
+          "webgpu_used",
+          "fallback_path",
+          "known_gaps"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "dispatch_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T17:51:49.544195Z",
+  "model_id": "gpt-5.4",
+  "result_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "result_path": "executions/results/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "plan_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "plan_path": "executions/plans/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "packet_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "provider_profile_id": "openai-responses",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "execution_channel": "workspace-agent",
+  "transport": "responses-api",
+  "status": "prepared",
+  "request_bundle_root": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "270fbe277bf1fae9bb2506aef36ef6553c066e64ef9ce02ab80bdce08257c6ce",
+    "request_payload_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "447cb6f73823ccb8b5522f7c40d75fcf310ec942efa62312e19bb3d800f9fc39",
+    "response_placeholder_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  },
+  "auth_status": {
+    "primary": {
+      "profile_id": "openai-responses",
+      "label": "OpenAI Responses API",
+      "provider": "openai",
+      "transport": "responses-api",
+      "docs_url": "https://platform.openai.com/docs/api-reference/responses",
+      "requirements": {
+        "required": [
+          {
+            "name": "OPENAI_API_KEY",
+            "present": true,
+            "length": 49
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "OPENAI_BASE_URL",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_ORG_ID",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_PROJECT",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": true
+      },
+      "satisfied": true
+    },
+    "tools": [
+      {
+        "profile_id": "codex-workspace",
+        "label": "Codex Workspace Agent",
+        "provider": "openai",
+        "transport": "workspace-agent",
+        "docs_url": "workspace-agent",
+        "requirements": {
+          "required": [],
+          "required_any": [],
+          "optional": [],
+          "satisfied": true
+        },
+        "satisfied": true
+      }
+    ]
+  },
+  "invocation": {
+    "kind": "http-api",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "api_key_hint": "$OPENAI_API_KEY",
+    "suggested_command": "bash executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh"
+  },
+  "request_artifacts": [
+    {
+      "path": "executions/dispatches/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "dispatch-record"
+    },
+    {
+      "path": "executions/dispatches/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.md",
+      "type": "dispatch-record-doc"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh",
+      "type": "curl-script"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/dispatch_manifest.json",
+      "type": "dispatch-manifest"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/invocation.md",
+      "type": "invocation-doc"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+      "type": "prompt-bundle"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+      "type": "request-payload"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json",
+      "type": "response-placeholder"
+    }
+  ]
+}

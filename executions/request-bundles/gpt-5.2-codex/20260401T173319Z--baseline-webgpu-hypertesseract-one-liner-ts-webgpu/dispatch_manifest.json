@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dispatch_id": "gpt-5.2-codex--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "model_id": "gpt-5.2-codex",
+  "provider_profile_id": "openai-responses",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "result_id": "gpt-5.2-codex--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_bundle_root": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "prepared",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "d9bbf53a4cfad5219eda67be0940c4128d0ac270b824ddc4df189f11538a9142",
+    "request_payload_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "b5721e2f75b71d00e751ed8d1c88f85e299bbf98b21d4efa4be6c38e1a5709fd",
+    "response_placeholder_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.2-codex/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  }
+}

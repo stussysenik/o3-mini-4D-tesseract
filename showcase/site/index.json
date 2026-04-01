@@ -1,0 +1,62 @@
+{
+  "source_snapshot_at": "2026-04-01T20:51:00Z",
+  "comparison_count": 4,
+  "comparisons": [
+    {
+      "comparison_id": "comparison--20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu",
+      "created_at": "2026-04-01T20:51:00Z",
+      "title": "gpt-5.4 vs glm-5.1 · ts-webgpu",
+      "summary": "Responsive comparison between the latest captured GPT-5.4 medium Codex lane and the latest GLM-5.1 ts-webgpu lane.",
+      "status": "draft",
+      "target_id": "ts-webgpu",
+      "pair_key": "gpt-5.4[medium]__vs__glm-5.1__ts-webgpu",
+      "left_model_id": "gpt-5.4",
+      "right_model_id": "glm-5.1",
+      "site_root": "showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu",
+      "site_href": "20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu/index.html",
+      "path": "showcase/comparisons/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu.json"
+    },
+    {
+      "comparison_id": "comparison--20260401T191700Z--gpt-5-4-vs-glm-5-1-ts-webgpu",
+      "created_at": "2026-04-01T19:17:00Z",
+      "title": "gpt-5.4 vs glm-5.1 · ts-webgpu",
+      "summary": "Responsive side-by-side showcase comparing gpt-5.4 and glm-5.1 for target ts-webgpu.",
+      "status": "draft",
+      "target_id": "ts-webgpu",
+      "pair_key": "gpt-5.4__vs__glm-5.1__ts-webgpu",
+      "left_model_id": "gpt-5.4",
+      "right_model_id": "glm-5.1",
+      "site_root": "showcase/site/20260401T191700Z--gpt-5-4-vs-glm-5-1-ts-webgpu",
+      "site_href": "20260401T191700Z--gpt-5-4-vs-glm-5-1-ts-webgpu/index.html",
+      "path": "showcase/comparisons/20260401T191700Z--gpt-5-4-vs-glm-5-1-ts-webgpu.json"
+    },
+    {
+      "comparison_id": "comparison--20260401T191600Z--o3-vs-gpt-5-4-ts-webgpu",
+      "created_at": "2026-04-01T19:16:00Z",
+      "title": "o3 vs gpt-5.4 · ts-webgpu",
+      "summary": "Responsive side-by-side showcase comparing o3 and gpt-5.4 for target ts-webgpu.",
+      "status": "draft",
+      "target_id": "ts-webgpu",
+      "pair_key": "o3__vs__gpt-5.4__ts-webgpu",
+      "left_model_id": "o3",
+      "right_model_id": "gpt-5.4",
+      "site_root": "showcase/site/20260401T191600Z--o3-vs-gpt-5-4-ts-webgpu",
+      "site_href": "20260401T191600Z--o3-vs-gpt-5-4-ts-webgpu/index.html",
+      "path": "showcase/comparisons/20260401T191600Z--o3-vs-gpt-5-4-ts-webgpu.json"
+    },
+    {
+      "comparison_id": "comparison--20260401T191500Z--o3-vs-glm-5-1-ts-webgpu",
+      "created_at": "2026-04-01T19:15:00Z",
+      "title": "o3 vs glm-5.1 · ts-webgpu",
+      "summary": "Responsive side-by-side showcase comparing o3 and glm-5.1 for target ts-webgpu.",
+      "status": "draft",
+      "target_id": "ts-webgpu",
+      "pair_key": "o3__vs__glm-5.1__ts-webgpu",
+      "left_model_id": "o3",
+      "right_model_id": "glm-5.1",
+      "site_root": "showcase/site/20260401T191500Z--o3-vs-glm-5-1-ts-webgpu",
+      "site_href": "20260401T191500Z--o3-vs-glm-5-1-ts-webgpu/index.html",
+      "path": "showcase/comparisons/20260401T191500Z--o3-vs-glm-5-1-ts-webgpu.json"
+    }
+  ]
+}

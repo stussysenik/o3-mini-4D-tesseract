@@ -1,0 +1,9 @@
+{
+  "id": "baseline-webgpu-hypertesseract",
+  "template_files": {
+    "one-liner": "one-liner.md",
+    "one-sentence": "one-sentence.md",
+    "one-shot": "one-shot.md"
+  }
+}
+

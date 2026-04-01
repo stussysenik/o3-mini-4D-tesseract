@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dispatch_id": "o3--20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "model_id": "o3",
+  "provider_profile_id": "openai-responses",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "result_id": "o3--20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_bundle_root": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "prepared",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "3560d4829c84af6ebb2c6dd55ed4546af5ac3ccc0c3c24e8862cb4f6f6811787",
+    "request_payload_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "5aa7fcfd343c1527509a90bee36322002bea57c6c65020a2580bed672a748549",
+    "response_placeholder_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/o3/20260401T173000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  }
+}

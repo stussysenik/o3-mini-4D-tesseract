@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "dispatch_id": "gpt-5.4--20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex",
+  "model_id": "gpt-5.4",
+  "provider_profile_id": "codex-workspace",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "result_id": "gpt-5.4--20260401T203000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh",
+  "request_bundle_root": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex",
+  "status": "prepared",
+  "request_settings": {
+    "reasoning_effort": "xhigh"
+  },
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/prompt_bundle.md",
+    "prompt_bundle_hash": "dff8265011a805feb053875a773fc5a3baf7cf632cd762a0eb44b592e39c66db",
+    "request_payload_path": null,
+    "request_payload_hash": null,
+    "response_placeholder_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex/response.text.md",
+    "generated_manifest_path": "executions/output/gpt-5.4/20260401T203000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.4/20260401T203100Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh-codex.json"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "default_model_id": "o3",
+  "notes": [
+    "Repository-level model ids are stable internal keys for benchmarking.",
+    "Provider aliases may change over time; benchmark ids should not depend on external alias churn.",
+    "Workspace-local model names such as gpt-5.4 come from the current coding environment rather than public API guarantees."
+  ],
+  "models": [
+    {
+      "id": "o3",
+      "label": "OpenAI o3",
+      "provider": "openai",
+      "provider_model": "o3",
+      "execution_channel": "api-or-workspace",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "reasoning",
+      "status": "active",
+      "storage_root": "o3",
+      "source_of_truth": "https://platform.openai.com/docs/models/o3"
+    },
+    {
+      "id": "glm-5.1",
+      "label": "GLM-5.1",
+      "provider": "z-ai",
+      "provider_model": "glm-5.1",
+      "execution_channel": "manual-or-api",
+      "provider_profile": "zai-openai-compatible",
+      "tool_profiles": [
+        "zai-claude-code-bridge"
+      ],
+      "family": "general",
+      "status": "active",
+      "storage_root": "glm-5.1",
+      "source_of_truth": "https://docs.z.ai/devpack/quick-start"
+    },
+    {
+      "id": "gpt-5.4",
+      "label": "GPT-5.4",
+      "provider": "openai",
+      "provider_model": "gpt-5.4",
+      "execution_channel": "workspace-agent",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "gpt",
+      "status": "planned",
+      "storage_root": "models/gpt-5.4",
+      "source_of_truth": "workspace-agent"
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "label": "GPT-5.4 Mini",
+      "provider": "openai",
+      "provider_model": "gpt-5.4-mini",
+      "execution_channel": "workspace-agent",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "gpt",
+      "status": "planned",
+      "storage_root": "models/gpt-5.4-mini",
+      "source_of_truth": "workspace-agent"
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "label": "GPT-5.3 Codex",
+      "provider": "openai",
+      "provider_model": "gpt-5.3-codex",
+      "execution_channel": "workspace-agent",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5.3-codex",
+      "source_of_truth": "workspace-agent"
+    },
+    {
+      "id": "gpt-5.3-codex-spark",
+      "label": "GPT-5.3 Codex Spark",
+      "provider": "openai",
+      "provider_model": "gpt-5.3-codex-spark",
+      "execution_channel": "workspace-agent",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5.3-codex-spark",
+      "source_of_truth": "workspace-agent"
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "label": "GPT-5.2 Codex",
+      "provider": "openai",
+      "provider_model": "gpt-5.2-codex",
+      "execution_channel": "api-or-workspace",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5.2-codex",
+      "source_of_truth": "https://platform.openai.com/docs/models/gpt-5.2-codex"
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "label": "GPT-5.1 Codex Max",
+      "provider": "openai",
+      "provider_model": "gpt-5.1-codex-max",
+      "execution_channel": "workspace-agent",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5.1-codex-max",
+      "source_of_truth": "workspace-agent"
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "label": "GPT-5.1 Codex Mini",
+      "provider": "openai",
+      "provider_model": "gpt-5.1-codex-mini",
+      "execution_channel": "api-or-workspace",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5.1-codex-mini",
+      "source_of_truth": "https://platform.openai.com/docs/models/gpt-5.1-codex-mini"
+    },
+    {
+      "id": "gpt-5-codex",
+      "label": "GPT-5 Codex",
+      "provider": "openai",
+      "provider_model": "gpt-5-codex",
+      "execution_channel": "api",
+      "provider_profile": "openai-responses",
+      "tool_profiles": [
+        "codex-workspace"
+      ],
+      "family": "codex",
+      "status": "planned",
+      "storage_root": "models/gpt-5-codex",
+      "source_of_truth": "https://platform.openai.com/docs/models/gpt-5-codex"
+    },
+    {
+      "id": "claude-opus-4.1",
+      "label": "Claude Opus 4.1",
+      "provider": "anthropic",
+      "provider_model": "claude-opus-4-1-20250805",
+      "execution_channel": "api",
+      "provider_profile": "anthropic-messages",
+      "tool_profiles": [
+        "claude-code-native"
+      ],
+      "family": "opus",
+      "status": "planned",
+      "storage_root": "models/claude-opus-4.1",
+      "source_of_truth": "https://docs.anthropic.com/en/docs/about-claude/models/all-models"
+    },
+    {
+      "id": "claude-opus-4",
+      "label": "Claude Opus 4",
+      "provider": "anthropic",
+      "provider_model": "claude-opus-4-0",
+      "execution_channel": "api",
+      "provider_profile": "anthropic-messages",
+      "tool_profiles": [
+        "claude-code-native"
+      ],
+      "family": "opus",
+      "status": "planned",
+      "storage_root": "models/claude-opus-4",
+      "source_of_truth": "https://docs.anthropic.com/en/docs/about-claude/models/all-models"
+    }
+  ]
+}

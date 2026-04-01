@@ -1,0 +1,88 @@
+# Provider Dispatch: gpt-5.4--20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh
+
+## Metadata
+- Model: `gpt-5.4`
+- Result: `gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu`
+- Provider Profile: `openai-responses`
+- Tool Profiles: `codex-workspace`
+- Execution Channel: `workspace-agent`
+- Transport: `responses-api`
+- Status: `sent`
+- Request Bundle: `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh`
+- Created At: `2026-04-01T20:10:00Z`
+
+## Invocation
+```json
+{
+  "kind": "http-api",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "api_key_hint": "$OPENAI_API_KEY",
+  "suggested_command": "bash executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/curl.sh"
+}
+```
+
+## Request Contract
+```json
+{
+  "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md",
+  "prompt_bundle_hash": "270fbe277bf1fae9bb2506aef36ef6553c066e64ef9ce02ab80bdce08257c6ce",
+  "request_payload_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json",
+  "request_payload_hash": "1f07f41feb74141e67a0956b548c7d321ce8605973d9112e71f18eb412a6d55d",
+  "response_placeholder_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.placeholder.json"
+}
+```
+
+
+## Request Settings
+```json
+{
+  "reasoning_effort": "xhigh"
+}
+```
+
+
+
+## Request Execution
+```json
+{
+  "runner": "benchmark_execute.py run-dispatch",
+  "started_at": "2026-04-01T19:36:19.512262Z",
+  "finished_at": "2026-04-01T19:36:19.833879Z",
+  "duration_ms": 321,
+  "http_status": 401,
+  "endpoint": "https://api.openai.com/v1/responses",
+  "request_payload_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json",
+  "request_payload_hash": "1f07f41feb74141e67a0956b548c7d321ce8605973d9112e71f18eb412a6d55d",
+  "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md",
+  "prompt_bundle_hash": "270fbe277bf1fae9bb2506aef36ef6553c066e64ef9ce02ab80bdce08257c6ce",
+  "request_bytes": 3928,
+  "response_bytes": 278,
+  "response_content_type": "application/json",
+  "error": "{\n  \"error\": {\n    \"message\": \"Incorrect API key provided: 09ce1609*************************************0IAG. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}"
+}
+```
+
+
+## Response Contract
+```json
+{
+  "raw_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.json",
+  "fallback_text_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.txt",
+  "normalized_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.normalized.json",
+  "extracted_text_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.text.md",
+  "generated_manifest_path": "executions/output/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+  "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.json"
+}
+```
+
+
+## Request Artifacts
+- `executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.json` (dispatch-record)
+- `executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.md` (dispatch-record-doc)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/curl.sh` (curl-script)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/dispatch_manifest.json` (dispatch-manifest)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/invocation.md` (invocation-doc)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md` (prompt-bundle)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json` (request-payload)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.placeholder.json` (response-placeholder)
+- `executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.json` (response-raw-json)

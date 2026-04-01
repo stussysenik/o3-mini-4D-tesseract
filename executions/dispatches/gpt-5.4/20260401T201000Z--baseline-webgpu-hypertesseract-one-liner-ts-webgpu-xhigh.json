@@ -1,0 +1,151 @@
+{
+  "dispatch_id": "gpt-5.4--20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh",
+  "created_at": "2026-04-01T20:10:00Z",
+  "model_id": "gpt-5.4",
+  "result_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "result_path": "executions/results/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "plan_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "plan_path": "executions/plans/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "packet_id": "gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "provider_profile_id": "openai-responses",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "execution_channel": "workspace-agent",
+  "transport": "responses-api",
+  "status": "sent",
+  "request_settings": {
+    "reasoning_effort": "xhigh"
+  },
+  "request_bundle_root": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md",
+    "prompt_bundle_hash": "270fbe277bf1fae9bb2506aef36ef6553c066e64ef9ce02ab80bdce08257c6ce",
+    "request_payload_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json",
+    "request_payload_hash": "1f07f41feb74141e67a0956b548c7d321ce8605973d9112e71f18eb412a6d55d",
+    "response_placeholder_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.text.md",
+    "generated_manifest_path": "executions/output/gpt-5.4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.json"
+  },
+  "auth_status": {
+    "primary": {
+      "profile_id": "openai-responses",
+      "label": "OpenAI Responses API",
+      "provider": "openai",
+      "transport": "responses-api",
+      "docs_url": "https://platform.openai.com/docs/api-reference/responses",
+      "requirements": {
+        "required": [
+          {
+            "name": "OPENAI_API_KEY",
+            "present": true,
+            "length": 49
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "OPENAI_BASE_URL",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_ORG_ID",
+            "present": false,
+            "length": 0
+          },
+          {
+            "name": "OPENAI_PROJECT",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": true
+      },
+      "satisfied": true
+    },
+    "tools": [
+      {
+        "profile_id": "codex-workspace",
+        "label": "Codex Workspace Agent",
+        "provider": "openai",
+        "transport": "workspace-agent",
+        "docs_url": "workspace-agent",
+        "requirements": {
+          "required": [],
+          "required_any": [],
+          "optional": [],
+          "satisfied": true
+        },
+        "satisfied": true
+      }
+    ]
+  },
+  "invocation": {
+    "kind": "http-api",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "api_key_hint": "$OPENAI_API_KEY",
+    "suggested_command": "bash executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/curl.sh"
+  },
+  "request_artifacts": [
+    {
+      "path": "executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.json",
+      "type": "dispatch-record"
+    },
+    {
+      "path": "executions/dispatches/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh.md",
+      "type": "dispatch-record-doc"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/curl.sh",
+      "type": "curl-script"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/dispatch_manifest.json",
+      "type": "dispatch-manifest"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/invocation.md",
+      "type": "invocation-doc"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md",
+      "type": "prompt-bundle"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json",
+      "type": "request-payload"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.placeholder.json",
+      "type": "response-placeholder"
+    },
+    {
+      "path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/response.raw.json",
+      "type": "response-raw-json"
+    }
+  ],
+  "request_execution": {
+    "runner": "benchmark_execute.py run-dispatch",
+    "started_at": "2026-04-01T19:36:19.512262Z",
+    "finished_at": "2026-04-01T19:36:19.833879Z",
+    "duration_ms": 321,
+    "http_status": 401,
+    "endpoint": "https://api.openai.com/v1/responses",
+    "request_payload_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/request.json",
+    "request_payload_hash": "1f07f41feb74141e67a0956b548c7d321ce8605973d9112e71f18eb412a6d55d",
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh/prompt_bundle.md",
+    "prompt_bundle_hash": "270fbe277bf1fae9bb2506aef36ef6553c066e64ef9ce02ab80bdce08257c6ce",
+    "request_bytes": 3928,
+    "response_bytes": 278,
+    "response_content_type": "application/json",
+    "error": "{\n  \"error\": {\n    \"message\": \"Incorrect API key provided: 09ce1609*************************************0IAG. You can find your API key at https://platform.openai.com/account/api-keys.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": \"invalid_api_key\"\n  }\n}"
+  }
+}

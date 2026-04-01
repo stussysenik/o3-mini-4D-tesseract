@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dispatch_id": "glm-5.1--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "model_id": "glm-5.1",
+  "provider_profile_id": "zai-openai-compatible",
+  "tool_profile_ids": [
+    "zai-claude-code-bridge"
+  ],
+  "result_id": "glm-5.1--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_bundle_root": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "prepared",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "ae2e7f071c7fa616da61825ae4a530c8e9d6b84a0cd1197937a535224cdb655b",
+    "request_payload_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "13a828a88edf827807f651a3451c5d6da8356c92cd3c432989c14719e4ec2fc6",
+    "response_placeholder_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/glm-5.1/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  }
+}

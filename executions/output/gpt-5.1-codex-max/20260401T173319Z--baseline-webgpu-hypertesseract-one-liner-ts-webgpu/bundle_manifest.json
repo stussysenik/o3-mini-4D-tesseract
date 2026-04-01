@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "result_id": "gpt-5.1-codex-max--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "model_id": "gpt-5.1-codex-max",
+  "plan_id": "gpt-5.1-codex-max--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_id": "gpt-5.1-codex-max--20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "scaffolded",
+  "created_at": "2026-04-01T17:33:19.615429Z",
+  "output_root": "executions/output/gpt-5.1-codex-max/20260401T173319Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "expected_children": [
+    "README.md",
+    "bundle_manifest.json",
+    "benchmark_report.json",
+    "generated/README.md",
+    "captures/README.md"
+  ]
+}

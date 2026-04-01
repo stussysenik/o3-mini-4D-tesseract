@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gpt-5.4 vs glm-5.1 · ts-webgpu</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Tesseract Benchmark Showcase</p>
+        <h1>gpt-5.4 vs glm-5.1 · ts-webgpu</h1>
+        <p class="lede">Responsive comparison between the latest captured GPT-5.4 medium Codex lane and the latest GLM-5.1 ts-webgpu lane.</p>
+        <div class="summary-grid"><article class="summary-card"><span>Target</span><strong>ts-webgpu</strong></article><article class="summary-card"><span>Left</span><strong>gpt-5.4</strong></article><article class="summary-card"><span>Right</span><strong>glm-5.1</strong></article><article class="summary-card"><span>Changed Files</span><strong>0</strong></article></div>
+      </section>
+
+      <section class="device-switcher">
+        <div class="device-toolbar"><button type="button" class="device-button is-active" data-device-select="mobile">Mobile</button><button type="button" class="device-button" data-device-select="tablet">Tablet</button><button type="button" class="device-button" data-device-select="desktop">Desktop</button></div>
+        <section class="device-stage is-active" data-device-stage="mobile"><div class="device-meta"><h2>Mobile</h2><p>390 x 844 · Phone-sized benchmark presentation.</p></div><div class="visual-grid"><article class="visual-card"><header><h3>gpt-5.4 (medium)</h3></header><div class="capture-empty"><strong>No Mobile capture</strong><span>gpt-5.4 (medium) has no capture artifact yet.</span></div></article><article class="visual-card"><header><h3>glm-5.1</h3></header><div class="capture-empty"><strong>No Mobile capture</strong><span>glm-5.1 has no capture artifact yet.</span></div></article></div></section><section class="device-stage" data-device-stage="tablet"><div class="device-meta"><h2>Tablet</h2><p>820 x 1180 · iPad-class side-by-side review surface.</p></div><div class="visual-grid"><article class="visual-card"><header><h3>gpt-5.4 (medium)</h3></header><div class="capture-empty"><strong>No Tablet capture</strong><span>gpt-5.4 (medium) has no capture artifact yet.</span></div></article><article class="visual-card"><header><h3>glm-5.1</h3></header><div class="capture-empty"><strong>No Tablet capture</strong><span>glm-5.1 has no capture artifact yet.</span></div></article></div></section><section class="device-stage" data-device-stage="desktop"><div class="device-meta"><h2>Desktop</h2><p>1440 x 960 · Desktop review surface for full-width visual and code comparison.</p></div><div class="visual-grid"><article class="visual-card"><header><h3>gpt-5.4 (medium)</h3></header><div class="capture-empty"><strong>No Desktop capture</strong><span>gpt-5.4 (medium) has no capture artifact yet.</span></div></article><article class="visual-card"><header><h3>glm-5.1</h3></header><div class="capture-empty"><strong>No Desktop capture</strong><span>glm-5.1 has no capture artifact yet.</span></div></article></div></section>
+      </section>
+
+      <section class="report-section">
+        <div class="section-heading">
+          <p class="eyebrow">Benchmark Reports</p>
+          <h2>Side-by-side contract snapshot</h2>
+        </div>
+        <div class="report-columns">
+          <section class="report-card"><h3>gpt-5.4 (medium)</h3><div class="report-grid"><div class="report-row"><span>Target</span><strong>ts-webgpu</strong></div><div class="report-row"><span>Generation</span><strong>one-liner</strong></div><div class="report-row"><span>WebGPU</span><strong>True</strong></div><div class="report-row"><span>WASM</span><strong>False</strong></div><div class="report-row"><span>Locales</span><strong>en</strong></div><div class="report-row"><span>Fallback</span><strong>Displays an explicit in-page support failure message and does not substitute another renderer.</strong></div><div class="report-row"><span>Files</span><strong>3</strong></div><div class="report-row"><span>Captures</span><strong>0</strong></div></div><details class="json-block"><summary>Benchmark Report JSON</summary><pre>{
+  &quot;report_version&quot;: 1,
+  &quot;result_id&quot;: &quot;gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium&quot;,
+  &quot;benchmark_id&quot;: &quot;webgpu-hypertesseract-v1&quot;,
+  &quot;generation_kind&quot;: &quot;one-liner&quot;,
+  &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+  &quot;target_language&quot;: &quot;ts&quot;,
+  &quot;runtime&quot;: &quot;browser&quot;,
+  &quot;lane&quot;: &quot;primary&quot;,
+  &quot;used_capabilities&quot;: [
+    &quot;WebGPU&quot;
+  ],
+  &quot;requested_locales&quot;: [
+    &quot;en&quot;
+  ],
+  &quot;wasm_used&quot;: false,
+  &quot;webgpu_used&quot;: true,
+  &quot;fallback_path&quot;: &quot;Displays an explicit in-page support failure message and does not substitute another renderer.&quot;,
+  &quot;known_gaps&quot;: [
+    &quot;Requires WebGPU browser support and appropriate GPU/driver availability.&quot;,
+    &quot;Uses shader-shaped glow instead of full volumetric lighting or bloom post-processing.&quot;,
+    &quot;CPU-side 4D projection is compact and honest but not optimized for very large procedural scenes.&quot;
+  ],
+  &quot;hypothesis&quot;: &quot;This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.&quot;,
+  &quot;method&quot;: &quot;Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.&quot;,
+  &quot;result_summary&quot;: &quot;A self-contained TypeScript + WebGPU static browser benchmark that renders a procedurally generated hypertesseract-derived wireframe with layered glow, depth haze, luminous sci-fi grading, ambient orbital motion, and subtle pointer-driven parallax. The benchmark panel is rendered in-page, explicitly declares WebGPU usage, explicitly states that WASM is not used, and exposes the requested `en` locale in visible UI.&quot;,
+  &quot;limitations&quot;: [
+    &quot;Assumed a minimal static workflow where a host environment can serve `index.html` and resolve the TypeScript entry during development; the implementation is kept to exactly 3 files as requested.&quot;,
+    &quot;The benchmark is intentionally WebGPU-only and does not include a visual Canvas2D or WebGL fallback, because that would compromise lane clarity.&quot;,
+    &quot;WASM is explicitly not used; the scene remains small enough that adding WASM would be unjustified complexity rather than an honest capability requirement.&quot;,
+    &quot;Benchmark scoring and visual evaluation are still pending.&quot;
+  ],
+  &quot;next_steps&quot;: [
+    &quot;Review the generated files under executions/output/.../generated/.&quot;,
+    &quot;Add screenshots or recordings under executions/output/.../captures/ if needed.&quot;,
+    &quot;Mark the result reviewed or promote it into a scored run once evaluation is ready.&quot;
+  ],
+  &quot;score_ready&quot;: false,
+  &quot;scoring_status&quot;: &quot;pending-review&quot;,
+  &quot;recommended_run_conditions&quot;: {
+    &quot;generation_kind&quot;: &quot;one-liner&quot;,
+    &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+    &quot;prompt_packet_id&quot;: &quot;gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+    &quot;prompt_revision&quot;: &quot;v0&quot;,
+    &quot;scene_seed&quot;: &quot;seed-001&quot;,
+    &quot;toolchain&quot;: &quot;manual&quot;,
+    &quot;shader_strategy&quot;: &quot;webgpu-native&quot;,
+    &quot;geometry_strategy&quot;: &quot;procedural&quot;,
+    &quot;wasm_enabled&quot;: false,
+    &quot;multilingual_scope&quot;: &quot;en&quot;
+  },
+  &quot;generated_files&quot;: [
+    &quot;index.html&quot;,
+    &quot;src/main.ts&quot;,
+    &quot;tsconfig.json&quot;
+  ],
+  &quot;delivery_sections_found&quot;: [
+    &quot;Implementation Summary&quot;,
+    &quot;Target Declaration&quot;,
+    &quot;Capability Declaration&quot;,
+    &quot;Files&quot;,
+    &quot;Benchmark Report&quot;,
+    &quot;Known Limitations&quot;
+  ],
+  &quot;provider_execution&quot;: {
+    &quot;dispatch_id&quot;: &quot;gpt-5.4--20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex&quot;,
+    &quot;provider_profile_id&quot;: &quot;codex-workspace&quot;,
+    &quot;transport&quot;: &quot;workspace-agent&quot;,
+    &quot;captured_at&quot;: &quot;2026-04-01T20:50:30Z&quot;,
+    &quot;packet_id&quot;: &quot;gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+    &quot;request_settings&quot;: {
+      &quot;reasoning_effort&quot;: &quot;medium&quot;
+    },
+    &quot;request_execution&quot;: {
+      &quot;runner&quot;: &quot;codex-workspace gpt-5.4 medium&quot;,
+      &quot;started_at&quot;: &quot;2026-04-01T20:46:00Z&quot;,
+      &quot;finished_at&quot;: &quot;2026-04-01T20:50:30Z&quot;,
+      &quot;duration_ms&quot;: 270000,
+      &quot;endpoint&quot;: &quot;workspace-agent&quot;,
+      &quot;request_payload_path&quot;: null,
+      &quot;request_payload_hash&quot;: null,
+      &quot;prompt_bundle_path&quot;: &quot;executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md&quot;,
+      &quot;prompt_bundle_hash&quot;: &quot;5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3&quot;,
+      &quot;request_bytes&quot;: 3873,
+      &quot;response_bytes&quot;: 18176,
+      &quot;response_content_type&quot;: &quot;text/markdown&quot;,
+      &quot;agent_transport&quot;: &quot;workspace-agent&quot;,
+      &quot;workspace_reasoning_effort&quot;: &quot;medium&quot;,
+      &quot;token_usage_available&quot;: false,
+      &quot;cost_available&quot;: false,
+      &quot;notes&quot;: [
+        &quot;Agent-captured execution does not expose provider token usage or billing telemetry in this environment.&quot;
+      ]
+    },
+    &quot;prompt_bundle_path&quot;: &quot;executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md&quot;,
+    &quot;prompt_bundle_hash&quot;: &quot;5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3&quot;,
+    &quot;request_payload_path&quot;: null,
+    &quot;request_payload_hash&quot;: null,
+    &quot;response_id&quot;: null,
+    &quot;provider_model&quot;: null,
+    &quot;status&quot;: null,
+    &quot;finish_reasons&quot;: [],
+    &quot;usage&quot;: null,
+    &quot;normalized_usage&quot;: null,
+    &quot;cost_estimate&quot;: null,
+    &quot;generated_manifest_path&quot;: &quot;executions/output/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium/generated/generation_manifest.json&quot;,
+    &quot;generated_files&quot;: [
+      &quot;index.html&quot;,
+      &quot;src/main.ts&quot;,
+      &quot;tsconfig.json&quot;
+    ]
+  }
+}</pre></details></section>
+          <section class="report-card"><h3>glm-5.1</h3><div class="report-grid"><div class="report-row"><span>Target</span><strong>ts-webgpu</strong></div><div class="report-row"><span>Generation</span><strong>one-liner</strong></div><div class="report-row"><span>WebGPU</span><strong>True</strong></div><div class="report-row"><span>WASM</span><strong>False</strong></div><div class="report-row"><span>Locales</span><strong>en</strong></div><div class="report-row"><span>Fallback</span><strong>undeclared</strong></div><div class="report-row"><span>Files</span><strong>0</strong></div><div class="report-row"><span>Captures</span><strong>0</strong></div></div><details class="json-block"><summary>Benchmark Report JSON</summary><pre>{
+  &quot;report_version&quot;: 1,
+  &quot;result_id&quot;: &quot;glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+  &quot;benchmark_id&quot;: &quot;webgpu-hypertesseract-v1&quot;,
+  &quot;generation_kind&quot;: &quot;one-liner&quot;,
+  &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+  &quot;target_language&quot;: &quot;ts&quot;,
+  &quot;runtime&quot;: &quot;browser&quot;,
+  &quot;lane&quot;: &quot;primary&quot;,
+  &quot;used_capabilities&quot;: [
+    &quot;html&quot;,
+    &quot;css&quot;,
+    &quot;dom&quot;,
+    &quot;webgpu&quot;,
+    &quot;wgsl&quot;
+  ],
+  &quot;requested_locales&quot;: [
+    &quot;en&quot;
+  ],
+  &quot;wasm_used&quot;: false,
+  &quot;webgpu_used&quot;: true,
+  &quot;fallback_path&quot;: &quot;undeclared&quot;,
+  &quot;known_gaps&quot;: [
+    &quot;Generated implementation files have not been attached yet.&quot;,
+    &quot;Benchmark scoring has not been completed yet.&quot;
+  ],
+  &quot;hypothesis&quot;: &quot;This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.&quot;,
+  &quot;method&quot;: &quot;Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.&quot;,
+  &quot;result_summary&quot;: &quot;Scaffolded result bundle created. Awaiting generated files and review.&quot;,
+  &quot;limitations&quot;: [
+    &quot;This is a scaffolded artifact, not a scored benchmark run.&quot;,
+    &quot;Provider execution has not been captured in this record yet.&quot;
+  ],
+  &quot;next_steps&quot;: [
+    &quot;Run the linked dispatch bundle and ingest the provider response via benchmark_execute.py ingest-response.&quot;,
+    &quot;Capture screenshots or recordings under executions/output/.../captures/.&quot;,
+    &quot;Update this report after review, then create a scored benchmark run if warranted.&quot;
+  ],
+  &quot;score_ready&quot;: false,
+  &quot;scoring_status&quot;: &quot;pending-review&quot;,
+  &quot;recommended_run_conditions&quot;: {
+    &quot;generation_kind&quot;: &quot;one-liner&quot;,
+    &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+    &quot;prompt_packet_id&quot;: &quot;glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+    &quot;prompt_revision&quot;: &quot;v0&quot;,
+    &quot;scene_seed&quot;: &quot;seed-001&quot;,
+    &quot;toolchain&quot;: &quot;manual&quot;,
+    &quot;shader_strategy&quot;: &quot;webgpu-native&quot;,
+    &quot;geometry_strategy&quot;: &quot;procedural&quot;,
+    &quot;wasm_enabled&quot;: false,
+    &quot;multilingual_scope&quot;: &quot;en&quot;
+  }
+}</pre></details></section>
+        </div>
+      </section>
+
+      <section class="code-section">
+        <div class="section-heading">
+          <p class="eyebrow">Generated Code</p>
+          <h2>Common changes and unique files</h2>
+        </div>
+        <div class="code-columns">
+          <section class="code-list"><h3>Left Only</h3><ul><li><code>index.html</code></li><li><code>src/main.ts</code></li><li><code>tsconfig.json</code></li></ul></section>
+          <section class="code-list"><h3>Right Only</h3><p class="muted">No right-only generated files.</p></section>
+        </div>
+        <section class="diff-section">
+          <h3>Changed Common Files</h3>
+          <p class="muted">No changed common files yet.</p>
+        </section>
+      </section>
+
+      <section class="footnote">
+        <details>
+          <summary>Canonical Comparison JSON</summary>
+          <pre>{
+  &quot;comparison_id&quot;: &quot;comparison--20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu&quot;,
+  &quot;created_at&quot;: &quot;2026-04-01T20:51:00Z&quot;,
+  &quot;benchmark_id&quot;: &quot;webgpu-hypertesseract-v1&quot;,
+  &quot;title&quot;: &quot;gpt-5.4 vs glm-5.1 · ts-webgpu&quot;,
+  &quot;status&quot;: &quot;draft&quot;,
+  &quot;summary&quot;: &quot;Responsive comparison between the latest captured GPT-5.4 medium Codex lane and the latest GLM-5.1 ts-webgpu lane.&quot;,
+  &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+  &quot;pair_key&quot;: &quot;gpt-5.4[medium]__vs__glm-5.1__ts-webgpu&quot;,
+  &quot;left&quot;: {
+    &quot;kind&quot;: &quot;result&quot;,
+    &quot;ref_id&quot;: &quot;gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium&quot;,
+    &quot;ref_path&quot;: &quot;executions/results/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium.json&quot;,
+    &quot;model_id&quot;: &quot;gpt-5.4&quot;,
+    &quot;label&quot;: &quot;gpt-5.4 (medium)&quot;,
+    &quot;comparison_key&quot;: &quot;gpt-5.4[medium]&quot;,
+    &quot;reasoning_effort&quot;: &quot;medium&quot;,
+    &quot;status&quot;: &quot;captured&quot;,
+    &quot;summary&quot;: &quot;A self-contained TypeScript + WebGPU static browser benchmark that renders a procedurally generated hypertesseract-derived wireframe with layered glow, depth haze, luminous sci-fi grading, ambient orbital motion, and subtle pointer-driven parallax. The benchmark panel is rendered in-page, explicitly declares WebGPU usage, explicitly states that WASM is not used, and exposes the requested `en` locale in visible UI.&quot;,
+    &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+    &quot;output_root&quot;: &quot;executions/output/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium&quot;,
+    &quot;capture_assets&quot;: [],
+    &quot;captures_by_device&quot;: {
+      &quot;mobile&quot;: null,
+      &quot;tablet&quot;: null,
+      &quot;desktop&quot;: null
+    },
+    &quot;generated_files&quot;: [
+      {
+        &quot;path&quot;: &quot;index.html&quot;,
+        &quot;bytes&quot;: 3035,
+        &quot;line_count&quot;: 117,
+        &quot;binary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;src/main.ts&quot;,
+        &quot;bytes&quot;: 12691,
+        &quot;line_count&quot;: 415,
+        &quot;binary&quot;: false
+      },
+      {
+        &quot;path&quot;: &quot;tsconfig.json&quot;,
+        &quot;bytes&quot;: 213,
+        &quot;line_count&quot;: 11,
+        &quot;binary&quot;: false
+      }
+    ],
+    &quot;benchmark_report&quot;: {
+      &quot;report_version&quot;: 1,
+      &quot;result_id&quot;: &quot;gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium&quot;,
+      &quot;benchmark_id&quot;: &quot;webgpu-hypertesseract-v1&quot;,
+      &quot;generation_kind&quot;: &quot;one-liner&quot;,
+      &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+      &quot;target_language&quot;: &quot;ts&quot;,
+      &quot;runtime&quot;: &quot;browser&quot;,
+      &quot;lane&quot;: &quot;primary&quot;,
+      &quot;used_capabilities&quot;: [
+        &quot;WebGPU&quot;
+      ],
+      &quot;requested_locales&quot;: [
+        &quot;en&quot;
+      ],
+      &quot;wasm_used&quot;: false,
+      &quot;webgpu_used&quot;: true,
+      &quot;fallback_path&quot;: &quot;Displays an explicit in-page support failure message and does not substitute another renderer.&quot;,
+      &quot;known_gaps&quot;: [
+        &quot;Requires WebGPU browser support and appropriate GPU/driver availability.&quot;,
+        &quot;Uses shader-shaped glow instead of full volumetric lighting or bloom post-processing.&quot;,
+        &quot;CPU-side 4D projection is compact and honest but not optimized for very large procedural scenes.&quot;
+      ],
+      &quot;hypothesis&quot;: &quot;This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.&quot;,
+      &quot;method&quot;: &quot;Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.&quot;,
+      &quot;result_summary&quot;: &quot;A self-contained TypeScript + WebGPU static browser benchmark that renders a procedurally generated hypertesseract-derived wireframe with layered glow, depth haze, luminous sci-fi grading, ambient orbital motion, and subtle pointer-driven parallax. The benchmark panel is rendered in-page, explicitly declares WebGPU usage, explicitly states that WASM is not used, and exposes the requested `en` locale in visible UI.&quot;,
+      &quot;limitations&quot;: [
+        &quot;Assumed a minimal static workflow where a host environment can serve `index.html` and resolve the TypeScript entry during development; the implementation is kept to exactly 3 files as requested.&quot;,
+        &quot;The benchmark is intentionally WebGPU-only and does not include a visual Canvas2D or WebGL fallback, because that would compromise lane clarity.&quot;,
+        &quot;WASM is explicitly not used; the scene remains small enough that adding WASM would be unjustified complexity rather than an honest capability requirement.&quot;,
+        &quot;Benchmark scoring and visual evaluation are still pending.&quot;
+      ],
+      &quot;next_steps&quot;: [
+        &quot;Review the generated files under executions/output/.../generated/.&quot;,
+        &quot;Add screenshots or recordings under executions/output/.../captures/ if needed.&quot;,
+        &quot;Mark the result reviewed or promote it into a scored run once evaluation is ready.&quot;
+      ],
+      &quot;score_ready&quot;: false,
+      &quot;scoring_status&quot;: &quot;pending-review&quot;,
+      &quot;recommended_run_conditions&quot;: {
+        &quot;generation_kind&quot;: &quot;one-liner&quot;,
+        &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+        &quot;prompt_packet_id&quot;: &quot;gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+        &quot;prompt_revision&quot;: &quot;v0&quot;,
+        &quot;scene_seed&quot;: &quot;seed-001&quot;,
+        &quot;toolchain&quot;: &quot;manual&quot;,
+        &quot;shader_strategy&quot;: &quot;webgpu-native&quot;,
+        &quot;geometry_strategy&quot;: &quot;procedural&quot;,
+        &quot;wasm_enabled&quot;: false,
+        &quot;multilingual_scope&quot;: &quot;en&quot;
+      },
+      &quot;generated_files&quot;: [
+        &quot;index.html&quot;,
+        &quot;src/main.ts&quot;,
+        &quot;tsconfig.json&quot;
+      ],
+      &quot;delivery_sections_found&quot;: [
+        &quot;Implementation Summary&quot;,
+        &quot;Target Declaration&quot;,
+        &quot;Capability Declaration&quot;,
+        &quot;Files&quot;,
+        &quot;Benchmark Report&quot;,
+        &quot;Known Limitations&quot;
+      ],
+      &quot;provider_execution&quot;: {
+        &quot;dispatch_id&quot;: &quot;gpt-5.4--20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex&quot;,
+        &quot;provider_profile_id&quot;: &quot;codex-workspace&quot;,
+        &quot;transport&quot;: &quot;workspace-agent&quot;,
+        &quot;captured_at&quot;: &quot;2026-04-01T20:50:30Z&quot;,
+        &quot;packet_id&quot;: &quot;gpt-5.4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+        &quot;request_settings&quot;: {
+          &quot;reasoning_effort&quot;: &quot;medium&quot;
+        },
+        &quot;request_execution&quot;: {
+          &quot;runner&quot;: &quot;codex-workspace gpt-5.4 medium&quot;,
+          &quot;started_at&quot;: &quot;2026-04-01T20:46:00Z&quot;,
+          &quot;finished_at&quot;: &quot;2026-04-01T20:50:30Z&quot;,
+          &quot;duration_ms&quot;: 270000,
+          &quot;endpoint&quot;: &quot;workspace-agent&quot;,
+          &quot;request_payload_path&quot;: null,
+          &quot;request_payload_hash&quot;: null,
+          &quot;prompt_bundle_path&quot;: &quot;executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md&quot;,
+          &quot;prompt_bundle_hash&quot;: &quot;5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3&quot;,
+          &quot;request_bytes&quot;: 3873,
+          &quot;response_bytes&quot;: 18176,
+          &quot;response_content_type&quot;: &quot;text/markdown&quot;,
+          &quot;agent_transport&quot;: &quot;workspace-agent&quot;,
+          &quot;workspace_reasoning_effort&quot;: &quot;medium&quot;,
+          &quot;token_usage_available&quot;: false,
+          &quot;cost_available&quot;: false,
+          &quot;notes&quot;: [
+            &quot;Agent-captured execution does not expose provider token usage or billing telemetry in this environment.&quot;
+          ]
+        },
+        &quot;prompt_bundle_path&quot;: &quot;executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md&quot;,
+        &quot;prompt_bundle_hash&quot;: &quot;5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3&quot;,
+        &quot;request_payload_path&quot;: null,
+        &quot;request_payload_hash&quot;: null,
+        &quot;response_id&quot;: null,
+        &quot;provider_model&quot;: null,
+        &quot;status&quot;: null,
+        &quot;finish_reasons&quot;: [],
+        &quot;usage&quot;: null,
+        &quot;normalized_usage&quot;: null,
+        &quot;cost_estimate&quot;: null,
+        &quot;generated_manifest_path&quot;: &quot;executions/output/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium/generated/generation_manifest.json&quot;,
+        &quot;generated_files&quot;: [
+          &quot;index.html&quot;,
+          &quot;src/main.ts&quot;,
+          &quot;tsconfig.json&quot;
+        ]
+      }
+    }
+  },
+  &quot;right&quot;: {
+    &quot;kind&quot;: &quot;result&quot;,
+    &quot;ref_id&quot;: &quot;glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+    &quot;ref_path&quot;: &quot;executions/results/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json&quot;,
+    &quot;model_id&quot;: &quot;glm-5.1&quot;,
+    &quot;label&quot;: &quot;glm-5.1&quot;,
+    &quot;comparison_key&quot;: &quot;glm-5.1&quot;,
+    &quot;reasoning_effort&quot;: null,
+    &quot;status&quot;: &quot;scaffolded&quot;,
+    &quot;summary&quot;: &quot;Scaffolded output bundle for execution plan glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.&quot;,
+    &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+    &quot;output_root&quot;: &quot;executions/output/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+    &quot;capture_assets&quot;: [],
+    &quot;captures_by_device&quot;: {
+      &quot;mobile&quot;: null,
+      &quot;tablet&quot;: null,
+      &quot;desktop&quot;: null
+    },
+    &quot;generated_files&quot;: [],
+    &quot;benchmark_report&quot;: {
+      &quot;report_version&quot;: 1,
+      &quot;result_id&quot;: &quot;glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+      &quot;benchmark_id&quot;: &quot;webgpu-hypertesseract-v1&quot;,
+      &quot;generation_kind&quot;: &quot;one-liner&quot;,
+      &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+      &quot;target_language&quot;: &quot;ts&quot;,
+      &quot;runtime&quot;: &quot;browser&quot;,
+      &quot;lane&quot;: &quot;primary&quot;,
+      &quot;used_capabilities&quot;: [
+        &quot;html&quot;,
+        &quot;css&quot;,
+        &quot;dom&quot;,
+        &quot;webgpu&quot;,
+        &quot;wgsl&quot;
+      ],
+      &quot;requested_locales&quot;: [
+        &quot;en&quot;
+      ],
+      &quot;wasm_used&quot;: false,
+      &quot;webgpu_used&quot;: true,
+      &quot;fallback_path&quot;: &quot;undeclared&quot;,
+      &quot;known_gaps&quot;: [
+        &quot;Generated implementation files have not been attached yet.&quot;,
+        &quot;Benchmark scoring has not been completed yet.&quot;
+      ],
+      &quot;hypothesis&quot;: &quot;This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.&quot;,
+      &quot;method&quot;: &quot;Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.&quot;,
+      &quot;result_summary&quot;: &quot;Scaffolded result bundle created. Awaiting generated files and review.&quot;,
+      &quot;limitations&quot;: [
+        &quot;This is a scaffolded artifact, not a scored benchmark run.&quot;,
+        &quot;Provider execution has not been captured in this record yet.&quot;
+      ],
+      &quot;next_steps&quot;: [
+        &quot;Run the linked dispatch bundle and ingest the provider response via benchmark_execute.py ingest-response.&quot;,
+        &quot;Capture screenshots or recordings under executions/output/.../captures/.&quot;,
+        &quot;Update this report after review, then create a scored benchmark run if warranted.&quot;
+      ],
+      &quot;score_ready&quot;: false,
+      &quot;scoring_status&quot;: &quot;pending-review&quot;,
+      &quot;recommended_run_conditions&quot;: {
+        &quot;generation_kind&quot;: &quot;one-liner&quot;,
+        &quot;target_id&quot;: &quot;ts-webgpu&quot;,
+        &quot;prompt_packet_id&quot;: &quot;glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu&quot;,
+        &quot;prompt_revision&quot;: &quot;v0&quot;,
+        &quot;scene_seed&quot;: &quot;seed-001&quot;,
+        &quot;toolchain&quot;: &quot;manual&quot;,
+        &quot;shader_strategy&quot;: &quot;webgpu-native&quot;,
+        &quot;geometry_strategy&quot;: &quot;procedural&quot;,
+        &quot;wasm_enabled&quot;: false,
+        &quot;multilingual_scope&quot;: &quot;en&quot;
+      }
+    }
+  },
+  &quot;site_root&quot;: &quot;showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu&quot;,
+  &quot;device_presets&quot;: [
+    {
+      &quot;id&quot;: &quot;mobile&quot;,
+      &quot;label&quot;: &quot;Mobile&quot;,
+      &quot;width&quot;: 390,
+      &quot;height&quot;: 844,
+      &quot;notes&quot;: &quot;Phone-sized benchmark presentation.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;tablet&quot;,
+      &quot;label&quot;: &quot;Tablet&quot;,
+      &quot;width&quot;: 820,
+      &quot;height&quot;: 1180,
+      &quot;notes&quot;: &quot;iPad-class side-by-side review surface.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;desktop&quot;,
+      &quot;label&quot;: &quot;Desktop&quot;,
+      &quot;width&quot;: 1440,
+      &quot;height&quot;: 960,
+      &quot;notes&quot;: &quot;Desktop review surface for full-width visual and code comparison.&quot;
+    }
+  ],
+  &quot;code_summary&quot;: {
+    &quot;left_file_count&quot;: 3,
+    &quot;right_file_count&quot;: 0,
+    &quot;shared_identical&quot;: [],
+    &quot;shared_changed&quot;: [],
+    &quot;left_only&quot;: [
+      &quot;index.html&quot;,
+      &quot;src/main.ts&quot;,
+      &quot;tsconfig.json&quot;
+    ],
+    &quot;right_only&quot;: [],
+    &quot;diff_entries&quot;: []
+  },
+  &quot;notes&quot;: [
+    &quot;Comparison records are canonical; showcase site files are derived artifacts.&quot;
+  ],
+  &quot;artifacts&quot;: [
+    {
+      &quot;path&quot;: &quot;showcase/comparisons/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu.json&quot;,
+      &quot;type&quot;: &quot;comparison-record&quot;
+    },
+    {
+      &quot;path&quot;: &quot;showcase/comparisons/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu.md&quot;,
+      &quot;type&quot;: &quot;comparison-record-doc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu/index.html&quot;,
+      &quot;type&quot;: &quot;comparison-site-html&quot;
+    },
+    {
+      &quot;path&quot;: &quot;showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu/styles.css&quot;,
+      &quot;type&quot;: &quot;comparison-site-css&quot;
+    },
+    {
+      &quot;path&quot;: &quot;showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu/app.js&quot;,
+      &quot;type&quot;: &quot;comparison-site-js&quot;
+    },
+    {
+      &quot;path&quot;: &quot;showcase/site/20260401T205100Z--gpt-5-4-medium-vs-glm-5-1-ts-webgpu/comparison.json&quot;,
+      &quot;type&quot;: &quot;comparison-site-data&quot;
+    }
+  ]
+}</pre>
+        </details>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

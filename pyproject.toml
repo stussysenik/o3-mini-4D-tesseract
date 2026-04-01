@@ -3,41 +3,43 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tesseract-4d"
+name = "tesseract-benchmark"
 version = "0.1.0"
-description = "4D Tesseract Ball Animation"
+description = "Data-driven 3D frontend benchmark workspace for WebGPU and WASM hypertesseract experiments."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
 authors = [
-    { name = "Your Name", email = "your.email@example.com" },
+    { name = "S Praa" },
 ]
 dependencies = [
-    "pygame==2.5.2",
+    "dspy==3.1.3",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "black>=23.3.0",
-    "flake8>=6.0.0",
-    "pytest>=7.4.0",
+[project.scripts]
+tesseract-ledger = "benchmark_ledger:main"
+tesseract-generate = "benchmark_generate:main"
+tesseract-execute = "benchmark_execute:main"
+tesseract-admin = "benchmark_admin:main"
+tesseract-showcase = "benchmark_showcase:main"
+tesseract-preview = "benchmark_preview:main"
+
+[tool.hatch.build.targets.wheel]
+include = [
+  ".env.example",
+  "benchmark_core.py",
+  "benchmark_ledger.py",
+  "benchmark_generate.py",
+  "benchmark_execute.py",
+  "benchmark_admin.py",
+  "benchmark_showcase.py",
+  "benchmark_preview.py",
+  "benchmark_manifest.json",
+  "generation",
+  "models",
+  "providers",
+  "executions",
+  "showcase",
+  "openspec",
+  "README.md",
 ]
-
-[tool.black]
-line-length = 88
-target-version = ["py312"]
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-
-[tool.mypy]
-python_version = "3.12"
-strict = true
-warn_return_any = true
-warn_unused_configs = true
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
-addopts = "-ra -q --cov=src" 

@@ -1,0 +1,39 @@
+name: Benchmark Integrity
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python -m pip install .
+
+      - name: Validate run records
+        run: python benchmark_ledger.py validate
+
+      - name: Validate generation packets
+        run: python benchmark_generate.py validate
+
+      - name: Validate execution plans
+        run: python benchmark_execute.py validate
+
+      - name: Build benchmark catalog
+        run: python benchmark_admin.py build-catalog --check
+
+      - name: Ensure generated docs are fresh
+        run: python benchmark_ledger.py build-readme --check
+
+      - name: Compile CLIs
+        run: python -m py_compile benchmark_core.py benchmark_ledger.py benchmark_generate.py benchmark_execute.py benchmark_admin.py

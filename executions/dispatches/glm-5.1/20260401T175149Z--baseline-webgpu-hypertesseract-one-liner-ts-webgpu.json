@@ -1,0 +1,151 @@
+{
+  "dispatch_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T17:51:49.534256Z",
+  "model_id": "glm-5.1",
+  "result_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "result_path": "executions/results/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "plan_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "plan_path": "executions/plans/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "packet_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "provider_profile_id": "zai-openai-compatible",
+  "tool_profile_ids": [
+    "zai-claude-code-bridge"
+  ],
+  "execution_channel": "manual-or-api",
+  "transport": "openai-compatible",
+  "status": "sent",
+  "request_bundle_root": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "4fb5ef538368169b5d4571dd87a02f5e9a93011822f22e40331ceb898aeb4ad8",
+    "request_payload_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "ce88ba876dd275f41db1d455aefa35d0cf917dde5befd0419eb3bc659ebc51e7",
+    "response_placeholder_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  },
+  "auth_status": {
+    "primary": {
+      "profile_id": "zai-openai-compatible",
+      "label": "Z.AI OpenAI-Compatible API",
+      "provider": "z-ai",
+      "transport": "openai-compatible",
+      "docs_url": "https://docs.z.ai/devpack/quick-start",
+      "requirements": {
+        "required": [
+          {
+            "name": "ZAI_API_KEY",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "ZAI_BASE_URL",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": false
+      },
+      "satisfied": false
+    },
+    "tools": [
+      {
+        "profile_id": "zai-claude-code-bridge",
+        "label": "Z.AI via Claude Code Bridge",
+        "provider": "z-ai",
+        "transport": "claude-code-bridge",
+        "docs_url": "https://docs.z.ai/devpack/quick-start",
+        "requirements": {
+          "required": [
+            {
+              "name": "ZAI_API_KEY",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "required_any": [],
+          "optional": [
+            {
+              "name": "API_TIMEOUT_MS",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "satisfied": false
+        },
+        "satisfied": false
+      }
+    ]
+  },
+  "invocation": {
+    "kind": "http-api",
+    "endpoint": "https://api.z.ai/api/paas/v4/chat/completions",
+    "api_key_hint": "$ZAI_API_KEY",
+    "suggested_command": "bash executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh"
+  },
+  "request_artifacts": [
+    {
+      "path": "executions/dispatches/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "dispatch-record"
+    },
+    {
+      "path": "executions/dispatches/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.md",
+      "type": "dispatch-record-doc"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/curl.sh",
+      "type": "curl-script"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/dispatch_manifest.json",
+      "type": "dispatch-manifest"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/invocation.md",
+      "type": "invocation-doc"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+      "type": "prompt-bundle"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+      "type": "request-payload"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json",
+      "type": "response-placeholder"
+    },
+    {
+      "path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+      "type": "response-raw-json"
+    }
+  ],
+  "request_settings": {},
+  "request_execution": {
+    "runner": "benchmark_execute.py run-dispatch",
+    "started_at": "2026-04-01T21:35:11.566567Z",
+    "finished_at": "2026-04-01T21:35:14.181377Z",
+    "duration_ms": 2614,
+    "http_status": 429,
+    "endpoint": "https://api.z.ai/api/paas/v4/chat/completions",
+    "request_payload_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "ce88ba876dd275f41db1d455aefa35d0cf917dde5befd0419eb3bc659ebc51e7",
+    "prompt_bundle_path": "executions/request-bundles/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "4fb5ef538368169b5d4571dd87a02f5e9a93011822f22e40331ceb898aeb4ad8",
+    "request_bytes": 3660,
+    "response_bytes": 99,
+    "response_content_type": "application/json; charset=UTF-8",
+    "error": "{\"error\":{\"code\":\"1113\",\"message\":\"Insufficient balance or no resource package. Please recharge.\"}}"
+  }
+}

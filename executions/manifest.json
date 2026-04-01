@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "catalog_path": "benchmark_catalog.json",
+  "planner_engines": [
+    {
+      "id": "dspy",
+      "label": "DSPy Planner",
+      "status": "active",
+      "notes": "Primary programmatic planning surface for future optimization, evaluations, and execution routing."
+    },
+    {
+      "id": "openspec",
+      "label": "OpenSpec Planning Layer",
+      "status": "active",
+      "notes": "Repository-native planning and alignment layer for change proposals, tasks, and living specs."
+    }
+  ],
+  "plan_required_fields": [
+    "plan_id",
+    "created_at",
+    "model_id",
+    "packet_id",
+    "planner_engine",
+    "execution_mode",
+    "steps",
+    "artifacts",
+    "status"
+  ],
+  "result_required_fields": [
+    "result_id",
+    "created_at",
+    "model_id",
+    "plan_id",
+    "packet_id",
+    "execution_mode",
+    "status",
+    "summary",
+    "artifacts",
+    "benchmark_report"
+  ],
+  "dispatch_required_fields": [
+    "dispatch_id",
+    "created_at",
+    "model_id",
+    "result_id",
+    "plan_id",
+    "packet_id",
+    "result_path",
+    "plan_path",
+    "packet_path",
+    "provider_profile_id",
+    "tool_profile_ids",
+    "execution_channel",
+    "transport",
+    "status",
+    "request_bundle_root",
+    "request_contract",
+    "response_contract",
+    "request_artifacts",
+    "invocation"
+  ],
+  "benchmark_report_required_fields": [
+    "report_version",
+    "result_id",
+    "benchmark_id",
+    "generation_kind",
+    "target_id",
+    "target_language",
+    "runtime",
+    "lane",
+    "used_capabilities",
+    "requested_locales",
+    "wasm_used",
+    "webgpu_used",
+    "fallback_path",
+    "known_gaps",
+    "hypothesis",
+    "method",
+    "result_summary",
+    "limitations",
+    "next_steps",
+    "score_ready",
+    "scoring_status",
+    "recommended_run_conditions"
+  ],
+  "execution_modes": [
+    "plan-only",
+    "dry-run",
+    "manual-dispatch",
+    "provider-api",
+    "workspace-agent"
+  ],
+  "result_status_values": [
+    "scaffolded",
+    "captured",
+    "reviewed",
+    "linked",
+    "archived"
+  ],
+  "dispatch_status_values": [
+    "prepared",
+    "ready",
+    "sent",
+    "captured",
+    "archived"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "dispatch_id": "gpt-5.4--20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex",
+  "model_id": "gpt-5.4",
+  "provider_profile_id": "codex-workspace",
+  "tool_profile_ids": [
+    "codex-workspace"
+  ],
+  "result_id": "gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium",
+  "request_bundle_root": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex",
+  "status": "captured",
+  "request_settings": {
+    "reasoning_effort": "medium"
+  },
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md",
+    "prompt_bundle_hash": "5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3",
+    "request_payload_path": null,
+    "request_payload_hash": null,
+    "response_placeholder_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.text.md",
+    "generated_manifest_path": "executions/output/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex.json"
+  },
+  "request_execution": {
+    "runner": "codex-workspace gpt-5.4 medium",
+    "started_at": "2026-04-01T20:46:00Z",
+    "finished_at": "2026-04-01T20:50:30Z",
+    "duration_ms": 270000,
+    "endpoint": "workspace-agent",
+    "request_payload_path": null,
+    "request_payload_hash": null,
+    "prompt_bundle_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/prompt_bundle.md",
+    "prompt_bundle_hash": "5e262819cc9ded65316a9520ecca50ca530633cb7e08b1752bf77318973cb2d3",
+    "request_bytes": 3873,
+    "response_bytes": 18176,
+    "response_content_type": "text/markdown",
+    "agent_transport": "workspace-agent",
+    "workspace_reasoning_effort": "medium",
+    "token_usage_available": false,
+    "cost_available": false,
+    "notes": [
+      "Agent-captured execution does not expose provider token usage or billing telemetry in this environment."
+    ]
+  }
+}

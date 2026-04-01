@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "dispatch_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "model_id": "claude-opus-4",
+  "provider_profile_id": "anthropic-messages",
+  "tool_profile_ids": [
+    "claude-code-native"
+  ],
+  "result_id": "claude-opus-4--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "request_bundle_root": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "status": "prepared",
+  "request_contract": {
+    "prompt_bundle_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/prompt_bundle.md",
+    "prompt_bundle_hash": "b573e292201043cfe7639b743de5aa9026aaadb6ffe5a5a24f16de7ea68361a4",
+    "request_payload_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/request.json",
+    "request_payload_hash": "7a9ebe830e05281c9bd557f8dc8b4748532614f9da81cb99ead6a82f0aeed4c2",
+    "response_placeholder_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.placeholder.json"
+  },
+  "response_contract": {
+    "raw_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.json",
+    "fallback_text_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.raw.txt",
+    "normalized_response_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.normalized.json",
+    "extracted_text_path": "executions/request-bundles/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/response.text.md",
+    "generated_manifest_path": "executions/output/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu/generated/generation_manifest.json",
+    "ingest_command": "python benchmark_execute.py ingest-response --dispatch executions/dispatches/claude-opus-4/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json"
+  }
+}

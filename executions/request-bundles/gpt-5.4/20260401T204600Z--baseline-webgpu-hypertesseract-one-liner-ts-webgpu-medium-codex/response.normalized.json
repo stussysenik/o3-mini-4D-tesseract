@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dispatch_id": "gpt-5.4--20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex",
+  "result_id": "gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium",
+  "captured_at": "2026-04-01T20:50:30Z",
+  "source_format": "text",
+  "source_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.raw.txt",
+  "transport": "workspace-agent",
+  "provider_response": {
+    "response_id": null,
+    "provider_model": null,
+    "status": null,
+    "usage": null,
+    "finish_reasons": []
+  },
+  "present_sections": [
+    "Implementation Summary",
+    "Target Declaration",
+    "Capability Declaration",
+    "Files",
+    "Benchmark Report",
+    "Known Limitations"
+  ],
+  "missing_sections": [],
+  "warnings": [],
+  "extracted_files": [
+    "index.html",
+    "src/main.ts",
+    "tsconfig.json"
+  ]
+}

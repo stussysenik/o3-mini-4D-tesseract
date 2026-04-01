@@ -1,0 +1,5 @@
+{
+  "dispatch_id": "gpt-5.4--20260401T201000Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-xhigh",
+  "status": "pending",
+  "notes": "Write raw provider output to response.raw.json or provide --source to ingest-response. This placeholder is not the canonical raw response artifact."
+}

@@ -1,0 +1,183 @@
+{
+  "comparison_id": "comparison--20260401T191500Z--o3-vs-glm-5-1-ts-webgpu",
+  "title": "o3 vs glm-5.1 · ts-webgpu",
+  "summary": "Responsive side-by-side showcase comparing o3 and glm-5.1 for target ts-webgpu.",
+  "target_id": "ts-webgpu",
+  "left": {
+    "kind": "result",
+    "ref_id": "o3--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+    "ref_path": "executions/results/o3/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+    "model_id": "o3",
+    "label": "o3",
+    "status": "scaffolded",
+    "summary": "Scaffolded output bundle for execution plan o3--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.",
+    "target_id": "ts-webgpu",
+    "output_root": "executions/output/o3/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+    "capture_assets": [],
+    "captures_by_device": {
+      "mobile": null,
+      "tablet": null,
+      "desktop": null
+    },
+    "generated_files": [],
+    "benchmark_report": {
+      "report_version": 1,
+      "result_id": "o3--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+      "benchmark_id": "webgpu-hypertesseract-v1",
+      "generation_kind": "one-liner",
+      "target_id": "ts-webgpu",
+      "target_language": "ts",
+      "runtime": "browser",
+      "lane": "primary",
+      "used_capabilities": [
+        "html",
+        "css",
+        "dom",
+        "webgpu",
+        "wgsl"
+      ],
+      "requested_locales": [
+        "en"
+      ],
+      "wasm_used": false,
+      "webgpu_used": true,
+      "fallback_path": "undeclared",
+      "known_gaps": [
+        "Generated implementation files have not been attached yet.",
+        "Benchmark scoring has not been completed yet."
+      ],
+      "hypothesis": "This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.",
+      "method": "Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.",
+      "result_summary": "Scaffolded result bundle created. Awaiting generated files and review.",
+      "limitations": [
+        "This is a scaffolded artifact, not a scored benchmark run.",
+        "Provider execution has not been captured in this record yet."
+      ],
+      "next_steps": [
+        "Run the linked dispatch bundle and ingest the provider response via benchmark_execute.py ingest-response.",
+        "Capture screenshots or recordings under executions/output/.../captures/.",
+        "Update this report after review, then create a scored benchmark run if warranted."
+      ],
+      "score_ready": false,
+      "scoring_status": "pending-review",
+      "recommended_run_conditions": {
+        "generation_kind": "one-liner",
+        "target_id": "ts-webgpu",
+        "prompt_packet_id": "o3--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+        "prompt_revision": "v0",
+        "scene_seed": "seed-001",
+        "toolchain": "manual",
+        "shader_strategy": "webgpu-native",
+        "geometry_strategy": "procedural",
+        "wasm_enabled": false,
+        "multilingual_scope": "en"
+      }
+    }
+  },
+  "right": {
+    "kind": "result",
+    "ref_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+    "ref_path": "executions/results/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+    "model_id": "glm-5.1",
+    "label": "glm-5.1",
+    "status": "scaffolded",
+    "summary": "Scaffolded output bundle for execution plan glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.",
+    "target_id": "ts-webgpu",
+    "output_root": "executions/output/glm-5.1/20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+    "capture_assets": [],
+    "captures_by_device": {
+      "mobile": null,
+      "tablet": null,
+      "desktop": null
+    },
+    "generated_files": [],
+    "benchmark_report": {
+      "report_version": 1,
+      "result_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+      "benchmark_id": "webgpu-hypertesseract-v1",
+      "generation_kind": "one-liner",
+      "target_id": "ts-webgpu",
+      "target_language": "ts",
+      "runtime": "browser",
+      "lane": "primary",
+      "used_capabilities": [
+        "html",
+        "css",
+        "dom",
+        "webgpu",
+        "wgsl"
+      ],
+      "requested_locales": [
+        "en"
+      ],
+      "wasm_used": false,
+      "webgpu_used": true,
+      "fallback_path": "undeclared",
+      "known_gaps": [
+        "Generated implementation files have not been attached yet.",
+        "Benchmark scoring has not been completed yet."
+      ],
+      "hypothesis": "This prompt packet should produce a browser-native hypertesseract scene that is valid for later benchmark scoring.",
+      "method": "Use the execution plan as the authoritative dispatch contract, store the raw output bundle here, and score only after review.",
+      "result_summary": "Scaffolded result bundle created. Awaiting generated files and review.",
+      "limitations": [
+        "This is a scaffolded artifact, not a scored benchmark run.",
+        "Provider execution has not been captured in this record yet."
+      ],
+      "next_steps": [
+        "Run the linked dispatch bundle and ingest the provider response via benchmark_execute.py ingest-response.",
+        "Capture screenshots or recordings under executions/output/.../captures/.",
+        "Update this report after review, then create a scored benchmark run if warranted."
+      ],
+      "score_ready": false,
+      "scoring_status": "pending-review",
+      "recommended_run_conditions": {
+        "generation_kind": "one-liner",
+        "target_id": "ts-webgpu",
+        "prompt_packet_id": "glm-5.1--20260401T175149Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+        "prompt_revision": "v0",
+        "scene_seed": "seed-001",
+        "toolchain": "manual",
+        "shader_strategy": "webgpu-native",
+        "geometry_strategy": "procedural",
+        "wasm_enabled": false,
+        "multilingual_scope": "en"
+      }
+    }
+  },
+  "device_presets": [
+    {
+      "id": "mobile",
+      "label": "Mobile",
+      "width": 390,
+      "height": 844,
+      "notes": "Phone-sized benchmark presentation."
+    },
+    {
+      "id": "tablet",
+      "label": "Tablet",
+      "width": 820,
+      "height": 1180,
+      "notes": "iPad-class side-by-side review surface."
+    },
+    {
+      "id": "desktop",
+      "label": "Desktop",
+      "width": 1440,
+      "height": 960,
+      "notes": "Desktop review surface for full-width visual and code comparison."
+    }
+  ],
+  "code_summary": {
+    "left_file_count": 0,
+    "right_file_count": 0,
+    "shared_identical": [],
+    "shared_changed": [],
+    "left_only": [],
+    "right_only": [],
+    "diff_entries": []
+  },
+  "notes": [
+    "Comparison records are canonical; showcase site files are derived artifacts."
+  ]
+}

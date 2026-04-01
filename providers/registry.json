@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "id": "openai-responses",
+      "label": "OpenAI Responses API",
+      "provider": "openai",
+      "transport": "responses-api",
+      "required_env": [
+        "OPENAI_API_KEY"
+      ],
+      "optional_env": [
+        "OPENAI_BASE_URL",
+        "OPENAI_ORG_ID",
+        "OPENAI_PROJECT"
+      ],
+      "docs_url": "https://platform.openai.com/docs/api-reference/responses",
+      "notes": "Primary OpenAI API profile. Use Responses API semantics for programmable execution."
+    },
+    {
+      "id": "codex-workspace",
+      "label": "Codex Workspace Agent",
+      "provider": "openai",
+      "transport": "workspace-agent",
+      "required_env": [],
+      "optional_env": [],
+      "docs_url": "workspace-agent",
+      "notes": "Uses the current coding workspace agent channel rather than direct provider API credentials."
+    },
+    {
+      "id": "anthropic-messages",
+      "label": "Anthropic Messages API",
+      "provider": "anthropic",
+      "transport": "messages-api",
+      "required_env": [
+        "ANTHROPIC_API_KEY"
+      ],
+      "optional_env": [
+        "ANTHROPIC_BASE_URL"
+      ],
+      "docs_url": "https://docs.anthropic.com/en/api/messages",
+      "notes": "Direct Anthropic API profile for Claude model comparisons."
+    },
+    {
+      "id": "claude-code-native",
+      "label": "Claude Code Native",
+      "provider": "anthropic",
+      "transport": "claude-code",
+      "required_env": [
+        "ANTHROPIC_API_KEY"
+      ],
+      "optional_env": [
+        "ANTHROPIC_BASE_URL"
+      ],
+      "docs_url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "notes": "Native Claude Code configuration against Anthropic endpoints."
+    },
+    {
+      "id": "zai-openai-compatible",
+      "label": "Z.AI OpenAI-Compatible API",
+      "provider": "z-ai",
+      "transport": "openai-compatible",
+      "required_env": [
+        "ZAI_API_KEY"
+      ],
+      "optional_env": [
+        "ZAI_BASE_URL"
+      ],
+      "defaults": {
+        "base_url": "https://api.z.ai/api/paas/v4"
+      },
+      "docs_url": "https://docs.z.ai/devpack/quick-start",
+      "notes": "Primary GLM API profile. The official quick start describes OpenAI-compatible tool configuration via https://api.z.ai/api/paas/v4."
+    },
+    {
+      "id": "zai-claude-code-bridge",
+      "label": "Z.AI via Claude Code Bridge",
+      "provider": "z-ai",
+      "transport": "claude-code-bridge",
+      "required_env": [
+        "ZAI_API_KEY"
+      ],
+      "optional_env": [
+        "API_TIMEOUT_MS"
+      ],
+      "derived_env": {
+        "ANTHROPIC_AUTH_TOKEN": "$ZAI_API_KEY",
+        "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+        "API_TIMEOUT_MS": "3000000"
+      },
+      "docs_url": "https://docs.z.ai/devpack/quick-start",
+      "notes": "Official Z.AI quick start for Claude Code uses ANTHROPIC_AUTH_TOKEN plus ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic."
+    },
+    {
+      "id": "nvidia-nim-endpoint",
+      "label": "NVIDIA NIM Endpoint",
+      "provider": "nvidia",
+      "transport": "openai-compatible-or-custom",
+      "required_env": [
+        "NIM_BASE_URL"
+      ],
+      "required_any_env": [
+        [
+          "NVIDIA_API_KEY",
+          "NIM_API_KEY",
+          "NIM_ENDPOINT_API_KEY"
+        ]
+      ],
+      "optional_env": [],
+      "docs_url": "https://build.nvidia.com/",
+      "notes": "Supports a hosted or self-managed NIM endpoint once a base URL and one API key variable are present."
+    },
+    {
+      "id": "nvidia-nim-container",
+      "label": "NVIDIA NIM Container Access",
+      "provider": "nvidia",
+      "transport": "container-runtime",
+      "required_env": [
+        "NGC_API_KEY"
+      ],
+      "optional_env": [
+        "NIM_CACHE_PATH",
+        "HF_TOKEN"
+      ],
+      "docs_url": "https://docs.nvidia.com/nim/large-language-models/latest/getting-started.html",
+      "notes": "Container/image access for self-hosted NIM flows. This is infrastructure auth rather than prompt-dispatch auth."
+    }
+  ]
+}
+

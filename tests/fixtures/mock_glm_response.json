@@ -1,0 +1,14 @@
+{
+  "id": "chatcmpl_mock_glm_001",
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "## Implementation Summary\n\nBuilds a browser-native WebGPU hypertesseract benchmark scene with a compact report panel.\n\n## Target Declaration\n\n- target_id: ts-webgpu\n- target_language: ts\n- runtime: browser\n\n## Capability Declaration\n\n- webgpu: true\n- wasm: false\n\n## Files\n\n### FILE: index.html\n```html\n<!doctype html>\n<html></html>\n```\n\n### FILE: src/main.ts\n```ts\nconsole.log(\"hypertesseract\");\n```\n\n## Benchmark Report\n\n```json\n{\n  \"target_id\": \"ts-webgpu\",\n  \"target_language\": \"ts\",\n  \"runtime\": \"browser\",\n  \"lane\": \"primary\",\n  \"used_capabilities\": [\"html\", \"css\", \"dom\", \"webgpu\", \"wgsl\"],\n  \"requested_locales\": [\"en\"],\n  \"wasm_used\": false,\n  \"webgpu_used\": true,\n  \"fallback_path\": \"none\",\n  \"known_gaps\": [\"No screenshot capture yet.\"]\n}\n```\n\n## Known Limitations\n\n- No screenshot capture yet.\n- No performance instrumentation yet.\n"
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "repo_title": "Tesseract Benchmark",
+  "benchmark_id": "webgpu-hypertesseract-v1",
+  "title": "WebGPU / WASM Hypertesseract Benchmark",
+  "objective": "Benchmark model-authored 3D frontend systems against a shared hypertesseract scene brief with measurable quality, performance, multilingual UX, and reproducibility expectations.",
+  "tracks": [
+    {
+      "id": "o3",
+      "label": "o3",
+      "provider": "openai",
+      "status": "active",
+      "storage_root": "o3"
+    },
+    {
+      "id": "glm-5.1",
+      "label": "glm-5.1",
+      "provider": "z-ai",
+      "status": "active",
+      "storage_root": "glm-5.1"
+    },
+    {
+      "id": "gpt-5.4",
+      "label": "gpt-5.4",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.4"
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "label": "gpt-5.4-mini",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.4-mini"
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "label": "gpt-5.3-codex",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.3-codex"
+    },
+    {
+      "id": "gpt-5.3-codex-spark",
+      "label": "gpt-5.3-codex-spark",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.3-codex-spark"
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "label": "gpt-5.2-codex",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.2-codex"
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "label": "gpt-5.1-codex-max",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.1-codex-max"
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "label": "gpt-5.1-codex-mini",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5.1-codex-mini"
+    },
+    {
+      "id": "gpt-5-codex",
+      "label": "gpt-5-codex",
+      "provider": "openai",
+      "status": "planned",
+      "storage_root": "models/gpt-5-codex"
+    },
+    {
+      "id": "claude-opus-4.1",
+      "label": "claude-opus-4.1",
+      "provider": "anthropic",
+      "status": "planned",
+      "storage_root": "models/claude-opus-4.1"
+    },
+    {
+      "id": "claude-opus-4",
+      "label": "claude-opus-4",
+      "provider": "anthropic",
+      "status": "planned",
+      "storage_root": "models/claude-opus-4"
+    }
+  ],
+  "core_requirements": [
+    "Browser-native 3D frontend implementation",
+    "WebGPU-first rendering path with explicit fallback notes",
+    "Optional WASM compute or geometry pipeline when used by the experiment",
+    "Documented environment capture for browser, GPU, locale, and display conditions",
+    "Timestamped scientific report per run with hypothesis, method, results, limitations, and next steps",
+    "README leaderboard generated from machine-readable run records"
+  ],
+  "controlled_variables": [
+    "browser_name",
+    "browser_version",
+    "browser_channel",
+    "gpu_vendor",
+    "gpu_adapter",
+    "gpu_driver",
+    "webgpu_backend",
+    "wasm_runtime",
+    "locale",
+    "canvas_size",
+    "device_pixel_ratio",
+    "headless",
+    "os_notes"
+  ],
+  "independent_variables": [
+    "model_track",
+    "generation_kind",
+    "target_id",
+    "prompt_packet_id",
+    "prompt_revision",
+    "scene_seed",
+    "toolchain",
+    "shader_strategy",
+    "geometry_strategy",
+    "wasm_enabled",
+    "multilingual_scope"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "zh-CN",
+    "ar"
+  ],
+  "metrics": {
+    "visual_fidelity": {
+      "label": "Visual Fidelity",
+      "description": "Perceptual quality of shading, composition, geometry, and overall scene realism."
+    },
+    "performance": {
+      "label": "Performance",
+      "description": "Frame pacing, responsiveness, and computational efficiency under declared test conditions."
+    },
+    "design_quality": {
+      "label": "Design Quality",
+      "description": "Intentional interface design, presentation, typography, and interaction quality."
+    },
+    "multilingual_quality": {
+      "label": "Multilingual Quality",
+      "description": "Accuracy and polish of language support across required locales."
+    },
+    "scientific_reporting": {
+      "label": "Scientific Reporting",
+      "description": "Clarity of methodology, captured conditions, and defensible reporting."
+    },
+    "reproducibility": {
+      "label": "Reproducibility",
+      "description": "How easily another engineer can rerun the experiment from recorded data."
+    }
+  },
+  "weights": {
+    "visual_fidelity": 0.3,
+    "performance": 0.25,
+    "design_quality": 0.15,
+    "multilingual_quality": 0.1,
+    "scientific_reporting": 0.1,
+    "reproducibility": 0.1
+  },
+  "recommended_conditions": {
+    "generation_kind": "one-liner",
+    "target_id": "ts-webgpu",
+    "prompt_packet_id": "packet-id",
+    "prompt_revision": "v0",
+    "scene_seed": "seed-001",
+    "toolchain": "manual",
+    "shader_strategy": "webgpu-native",
+    "geometry_strategy": "procedural",
+    "wasm_enabled": false,
+    "multilingual_scope": "en"
+  },
+  "status_values": [
+    "planned",
+    "in-progress",
+    "completed",
+    "archived"
+  ]
+}

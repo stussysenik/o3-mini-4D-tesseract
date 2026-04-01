@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "dispatch_id": "gpt-5.4--20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex",
+  "result_id": "gpt-5.4--20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium",
+  "captured_at": "2026-04-01T20:50:30Z",
+  "assistant_response_path": "executions/output/gpt-5.4/20260401T204500Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium/generated/response.md",
+  "captured_response_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.raw.txt",
+  "response_text_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.text.md",
+  "response_normalized_path": "executions/request-bundles/gpt-5.4/20260401T204600Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu-medium-codex/response.normalized.json",
+  "generated_files": [
+    "index.html",
+    "src/main.ts",
+    "tsconfig.json"
+  ],
+  "generated_file_count": 3,
+  "provider_response": {
+    "response_id": null,
+    "provider_model": null,
+    "status": null,
+    "usage": null,
+    "finish_reasons": []
+  },
+  "warnings": []
+}

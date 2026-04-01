@@ -1,0 +1,65 @@
+[
+  {
+    "run_id": "o3--20260401T153600Z--legacy-o3-mini-4d-tesseract-import",
+    "benchmark_id": "webgpu-hypertesseract-v1",
+    "track": "o3",
+    "title": "Legacy o3-mini-4D-tesseract import",
+    "status": "archived",
+    "summary": "Imported the original pygame-based fork as the zero-point historical baseline before the new browser benchmark exists.",
+    "created_at": "2026-04-01T15:36:00.466740Z",
+    "time_ledger": {
+      "recorded_at_utc": "2026-04-01T15:36:00.466740Z",
+      "epoch_ms": 1775057760466,
+      "epoch_ns": 1775057760466740000,
+      "year": 2026,
+      "quarter": "Q2",
+      "month": 4,
+      "day": 1,
+      "day_of_year": 91,
+      "iso_week": "2026-W14",
+      "iso_weekday": 3
+    },
+    "environment": {
+      "hostname": "seniks-Mac-Studio.local",
+      "platform": "macOS-26.3-arm64-arm-64bit",
+      "system": "Darwin",
+      "release": "25.3.0",
+      "machine": "arm64",
+      "python_version": "3.12.1",
+      "git_branch": "main",
+      "git_commit": "65976a8ef680b3596475f3c7730d4fa58f8d278a",
+      "captured": {}
+    },
+    "conditions": {
+      "prompt_revision": "legacy",
+      "scene_seed": "legacy",
+      "toolchain": "python",
+      "shader_strategy": "pygame-wireframe",
+      "geometry_strategy": "procedural",
+      "wasm_enabled": false,
+      "multilingual_scope": "en"
+    },
+    "metrics": {
+      "visual_fidelity": null,
+      "performance": null,
+      "design_quality": null,
+      "multilingual_quality": null,
+      "scientific_reporting": null,
+      "reproducibility": null
+    },
+    "artifacts": [
+      {
+        "path": "o3/archive/o3-mini-4d-tesseract"
+      }
+    ],
+    "scientific_report": {
+      "hypothesis": "Preserve the original fork as a stable origin point before introducing the WebGPU/WASM benchmark.",
+      "method": "Copy the fork into this repository, keep its source untouched under o3/archive, and register it as an archived baseline.",
+      "result_summary": "The historical baseline now lives inside the benchmark repo with git history preserved at the repository level.",
+      "limitations": "This import does not implement the new browser-native benchmark contract and is intentionally left unscored.",
+      "next_steps": "Author the first WebGPU hypertesseract scene, capture browser/GPU conditions, and score it against the shared manifest."
+    },
+    "composite_score": null,
+    "run_file": "o3/runs/20260401T153600Z--legacy-o3-mini-4d-tesseract-import.json"
+  }
+]

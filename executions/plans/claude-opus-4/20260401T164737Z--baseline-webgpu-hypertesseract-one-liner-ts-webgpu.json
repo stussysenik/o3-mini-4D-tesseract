@@ -1,0 +1,178 @@
+{
+  "plan_id": "claude-opus-4--20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "created_at": "2026-04-01T16:47:37.839795Z",
+  "model_id": "claude-opus-4",
+  "packet_id": "claude-opus-4--20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu",
+  "packet_path": "generation/packets/claude-opus-4/20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+  "planner_engine": "dspy",
+  "execution_mode": "plan-only",
+  "status": "planned",
+  "model_profile": {
+    "id": "claude-opus-4",
+    "label": "Claude Opus 4",
+    "provider": "anthropic",
+    "provider_model": "claude-opus-4-0",
+    "execution_channel": "api",
+    "provider_profile": "anthropic-messages",
+    "tool_profiles": [
+      "claude-code-native"
+    ],
+    "family": "opus",
+    "status": "planned",
+    "storage_root": "models/claude-opus-4",
+    "source_of_truth": "https://docs.anthropic.com/en/docs/about-claude/models/all-models"
+  },
+  "auth_status": {
+    "model_id": "claude-opus-4",
+    "primary": {
+      "profile_id": "anthropic-messages",
+      "label": "Anthropic Messages API",
+      "provider": "anthropic",
+      "transport": "messages-api",
+      "docs_url": "https://docs.anthropic.com/en/api/messages",
+      "requirements": {
+        "required": [
+          {
+            "name": "ANTHROPIC_API_KEY",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "required_any": [],
+        "optional": [
+          {
+            "name": "ANTHROPIC_BASE_URL",
+            "present": false,
+            "length": 0
+          }
+        ],
+        "satisfied": false
+      },
+      "satisfied": false
+    },
+    "tools": [
+      {
+        "profile_id": "claude-code-native",
+        "label": "Claude Code Native",
+        "provider": "anthropic",
+        "transport": "claude-code",
+        "docs_url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+        "requirements": {
+          "required": [
+            {
+              "name": "ANTHROPIC_API_KEY",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "required_any": [],
+          "optional": [
+            {
+              "name": "ANTHROPIC_BASE_URL",
+              "present": false,
+              "length": 0
+            }
+          ],
+          "satisfied": false
+        },
+        "satisfied": false
+      }
+    ]
+  },
+  "generation_target": {
+    "id": "ts-webgpu",
+    "label": "TypeScript + WebGPU",
+    "language": "ts",
+    "runtime": "browser",
+    "lane": "primary",
+    "default_capabilities": [
+      "html",
+      "css",
+      "dom",
+      "webgpu",
+      "wgsl"
+    ],
+    "optional_capabilities": [
+      "wasm",
+      "web-workers",
+      "offscreen-canvas"
+    ],
+    "recommended": true,
+    "notes": "Best default for the visual benchmark. Browser-native and highly comparable across models."
+  },
+  "openspec_refs": [
+    "openspec/specs/model-registry/spec.md",
+    "openspec/specs/prompt-packet-lifecycle/spec.md",
+    "openspec/specs/execution-orchestration/spec.md",
+    "openspec/specs/provider-auth/spec.md",
+    "openspec/changes/add-dspy-openspec-execution"
+  ],
+  "dspy_status": {
+    "available": true,
+    "version": "3.1.3",
+    "import_error": null,
+    "signature": "BenchmarkExecutionPlanSignature",
+    "module": "BenchmarkExecutionPlanner"
+  },
+  "dspy_contract": {
+    "signature": "BenchmarkExecutionPlanSignature",
+    "module": "BenchmarkExecutionPlanner",
+    "available": true
+  },
+  "steps": [
+    {
+      "id": "validate-inputs",
+      "title": "Validate packet and model compatibility",
+      "status": "pending",
+      "details": "Confirm the packet target, model id, and benchmark id are internally consistent."
+    },
+    {
+      "id": "prepare-context",
+      "title": "Assemble DSPy/OpenSpec planning context",
+      "status": "pending",
+      "details": "Prepare model profile, prompt packet, provider auth state, and relevant OpenSpec references for execution."
+    },
+    {
+      "id": "credential-check",
+      "title": "Check provider credentials",
+      "status": "pending",
+      "details": "Primary profile `anthropic-messages` is not ready."
+    },
+    {
+      "id": "dispatch",
+      "title": "Dispatch execution",
+      "status": "pending",
+      "details": "Dispatch using execution channel `api` in mode `plan-only`."
+    },
+    {
+      "id": "collect-output",
+      "title": "Collect output and benchmark report",
+      "status": "pending",
+      "details": "Capture generated files, benchmark report fields, and capability declarations."
+    },
+    {
+      "id": "register-artifacts",
+      "title": "Register output artifacts and eventual run",
+      "status": "pending",
+      "details": "Attach packet, execution plan, generated output, and benchmark run into the SSOT catalog."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "generation/packets/claude-opus-4/20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "prompt-packet"
+    },
+    {
+      "path": "executions/plans/claude-opus-4/20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.json",
+      "type": "execution-plan"
+    },
+    {
+      "path": "executions/plans/claude-opus-4/20260401T164737Z--baseline-webgpu-hypertesseract-one-liner-ts-webgpu.md",
+      "type": "execution-plan-doc"
+    }
+  ],
+  "notes": [
+    "This plan is planning-first and can remain dry until prompt and evaluation architecture stabilizes.",
+    "DSPy availability is recorded even if no model call is executed yet."
+  ]
+}
